@@ -6,8 +6,9 @@ export function Slider(props) {
     return(
         <div class="slidecontainer">
             <input type="range" 
-            min="1" 
+            min="0" 
             max="100" 
+            step="25"
             value={props.value} 
             className="slider"         
             onChange={(event) => props.onChange && props.onChange(parseInt(event.target.value))}

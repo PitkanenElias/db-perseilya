@@ -9,6 +9,7 @@ export default function Home() {
     const statementList = [{statement: "En aja autolla töihin", value: 50}, {statement: "Syön kasvisruokaa", value: 50}, {statement: "En matkusta lentokoneella", value: 50}]
     const feedBack = [
         "Olet ilmastontuhoaja. Koita parantaa tapasi",
+        "Sinulla olisi vielä paljon parannettavaa",
         "Olet aika normaali",
         "Teet jo joitain juttuja hyvin",
         "Teet jo paljon hyvää",
@@ -24,7 +25,6 @@ export default function Home() {
         setPoints(newPoints);
     };
 
-    // Tämä saattaa jossain vaiheessa tulla hyödylliseksi
     const calculateGrade = () => {
         const total = points.reduce((acc, cur) => acc + cur, 0);
         const percentage = total / (points.length * 100);
@@ -59,9 +59,9 @@ export default function Home() {
                     )
                 })}
 
-                {grade && (
+                {(grade || grade===0) && (
                     <div>
-                    <p>{feedBack[grade-1]}</p>
+                    <h2>{feedBack[grade]}</h2>
                     </div>
                 )}
                 </div>
