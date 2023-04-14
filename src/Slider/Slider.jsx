@@ -3,11 +3,18 @@ import "./slider.css"
 
 export function Slider(props) {
 
-    const [value, setValue] = useState(props.value)
-
     return(
         <div class="slidecontainer">
-            <input type="range" min="1" max="100" value={value} className="slider" id="myRange"></input>
+            <input 
+            type="range" 
+            min="1" 
+            max="100" 
+            value={props.value} 
+            className="slider"         
+            onChange={(event) => props.onChange(parseInt(event.target.value))}
+            onMouseUp={props.onAfterChange}
+            onTouchEnd={props.onAfterChange}>
+            </input>
         </div>
     );
 };

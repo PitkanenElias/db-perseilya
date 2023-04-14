@@ -4,10 +4,15 @@ import { Slider } from "./Slider/Slider";
 
 export default function  Home() {
 
-
-
     // Tästä alkavat slideriin ja interaktiiviseen kyselyyn liittyvät arvot ja funktiot
     const statementList = [{statement: "Ajan autolla töihin", value: 50}, {statement: "Syön kasvisruokaa", value: 50}]
+    const feedBack = [
+        "Olet ilmastontuhoaja. Koita parantaa tapasi",
+        "Voisit tsempata paljon.",
+        "Olet aika normaali",
+        "Teet jo jotain hyvää",
+        "Olet täydellinen"
+    ]
 
     const [points, setPoints] = useState([50, 50]); // Alussa amat arvot kuin statementListillä
     const [grade, setGrade] = useState(null);
@@ -25,8 +30,6 @@ export default function  Home() {
         const grade = Math.round(percentage * 5);
         setGrade(grade);
     };
-
-
 
 
     return (
@@ -57,7 +60,7 @@ export default function  Home() {
 
                 {grade && (
                     <div>
-                    <p>Your grade: {grade}</p>
+                    <p>Your grade: {feedBack[grade-1]}</p>
                     </div>
                 )}
                 </div>
