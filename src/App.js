@@ -1,13 +1,17 @@
-import React from "react"
-import "./styles.css";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./Home";
+import About from "./About";
+import TopMenu from "./TopMenu";
 
 export default function App() {
-
-    return(
-        <div className="App">
-            <h1>Hiilineutralius 2035</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dictum laoreet lacus vehicula aliquam. Suspendisse porttitor nisi nec metus lobortis accumsan. Integer sed quam sit amet orci pellentesque gravida. Curabitur eu molestie diam. Nam blandit sodales aliquet. Nullam metus erat, pharetra sed urna iaculis, mattis lobortis leo. Etiam eu dapibus.</p>
-        </div>
-    );
-    
+  return (
+      <div>
+        <TopMenu />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/About" element={<About />} />
+        </Routes>
+      </div>
+  );
 }
