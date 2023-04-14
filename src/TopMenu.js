@@ -8,15 +8,19 @@ export default function TopMenu() {
     navigate("/");
   };
 
+  const handleClickInfo = () => {
+    navigate("/Info");
+  };
+
   const handleClickAbout = () => {
     navigate("/About");
   };
 
   return (
     <div>
-      <h2>MenuBar for navigating</h2>
-      <button onClick={handleClickHome}>Home page</button>
-      <button onClick={handleClickAbout}>About</button>
+      <button onClick={handleClickHome}>Etusivu</button>
+      <button onClick={handleClickInfo}>Tietoa</button>
+      <button onClick={handleClickAbout}>Meistä</button>
     </div>
   );
 };
