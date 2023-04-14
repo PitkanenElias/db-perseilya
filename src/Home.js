@@ -3,7 +3,7 @@ import { Slider } from "./Slider/Slider";
 import "./styles.css"
 
 
-export default function  Home() {
+export default function Home() {
 
     // Tästä alkavat slideriin ja interaktiiviseen kyselyyn liittyvät arvot ja funktiot
     const statementList = [{statement: "En aja autolla töihin", value: 50}, {statement: "Syön kasvisruokaa", value: 50}, {statement: "En matkusta lentokoneella", value: 50}]

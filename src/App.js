@@ -4,6 +4,7 @@ import Home from "./Home";
 import About from "./About";
 import Info from "./Info";
 import TopMenu from "./TopMenu";
+import Footer from "./Footer";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
           <Route path="/About" element={<About />} />
           <Route path="/Info" element={<Info />} />
         </Routes>
+        <Footer />
       </div>
   );
 }
