@@ -5,6 +5,11 @@ import "./styles.css"
 
 export default function Home() {
 
+    /**
+     * Home on kampanjan ensimmäinen sivu ja kotisivu. Se sisältää interkatiivisen kyselyn, sekä sen
+     * antaman palautteen.
+     */
+
     // Tästä alkavat slideriin ja interaktiiviseen kyselyyn liittyvät arvot ja funktiot
     const statementList = [{statement: "En aja autolla töihin", value: 50}, {statement: "Syön kasvisruokaa", value: 50}, {statement: "En matkusta lentokoneella", value: 50}]
     const feedBack = [
