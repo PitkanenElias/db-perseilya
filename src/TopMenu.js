@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import "./menu.css"
 
 export default function TopMenu() {
   const navigate = useNavigate();
@@ -17,12 +18,14 @@ export default function TopMenu() {
   };
 
   return (
-    <div>
+    <div class="kaikki">
       <p>*********************************************************</p>
       <h2>Tämä on TopMenu/heading ja se on jokaisella sivun yläpäässä</h2>
-      <button onClick={handleClickHome}>Etusivu</button>
-      <button onClick={handleClickInfo}>Tietoa</button>
-      <button onClick={handleClickAbout}>Meistä</button>
+      <li id="valikko">
+        <button onClick={handleClickHome}>Etusivu</button>
+        <button onClick={handleClickInfo}>Tietoa</button>
+        <button onClick={handleClickAbout}>Meistä</button>
+      </li>
       <p>*********************************************************</p>
     </div>
   );

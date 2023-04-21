@@ -1,0 +1,16 @@
+#kaikki{
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    
+    color: #F7F7F2;
+}
+
+.valikko{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
