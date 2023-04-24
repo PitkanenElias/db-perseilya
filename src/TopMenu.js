@@ -21,11 +21,11 @@ export default function TopMenu() {
     <div class="kaikki">
       <p>*********************************************************</p>
       <h2>Tämä on TopMenu/heading ja se on jokaisella sivun yläpäässä</h2>
-      <li id="valikko">
+      <div id="valikko">
         <button onClick={handleClickHome}>Etusivu</button>
         <button onClick={handleClickInfo}>Tietoa</button>
         <button onClick={handleClickAbout}>Meistä</button>
-      </li>
+      </div>
       <p>*********************************************************</p>
     </div>
   );
