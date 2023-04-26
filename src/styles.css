@@ -22,18 +22,6 @@ body {
   filter: blur(30%) brightness(20%);
 }
 
-/*.otsikko {
-  position: relative;
-  width: 670px;
-  height: 255px;
-  left: 60vw;
-  top: 30vh;
-
-  font-family: "Urbanist";
-  font-style: normal;
-  font-weight: 500;
-*/
-
 .ekaTeksti {
   text-align: left;
   margin-left: 10vw;
