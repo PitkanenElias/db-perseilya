@@ -1,10 +1,12 @@
 .alaotsikko{
     font-family: 'Urbanist';
     font-style: normal;
-    text-align: center;
+    text-align: center;  
     color: #000000;
 }
 
-.teksti{display: flex;
+.teksti{font-family: 'Urbanist';
+        display: flex;
         flex-flow: column;
-        }
+        justify-content: center;
+        margin: 20px;}
