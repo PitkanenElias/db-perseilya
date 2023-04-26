@@ -20,7 +20,7 @@ export default function About() {
 
     return (
         <div>
-        <h2>Tällä sivulla tulee skrollamalla esiin uusi teksti</h2>
+        <h2 className="alaotsikko">Tällä sivulla tulee skrollamalla esiin uusi teksti</h2>
         <p className="teksti">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dictum laoreet lacus vehicula aliquam. Suspendisse porttitor nisi nec metus lobortis accumsan. Integer sed quam sit amet orci pellentesque gravida. Curabitur eu molestie diam. Nam blandit sodales aliquet. Nullam metus erat, pharetra sed urna iaculis, mattis lobortis leo. Etiam eu dapibus.
         Duis venenatis luctus pretium. Morbi tincidunt purus in diam eleifend posuere. In commodo est non eros condimentum, a vestibulum enim tempor. Etiam dignissim nulla et ornare aliquet. Curabitur non quam justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris tincidunt eu lectus sed sodales. Cras dignissim ac dolor id luctus. Nullam finibus interdum mauris et ultrices. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec accumsan tortor eget nulla mattis, non maximus dui ornare. Sed tristique mi vitae ligula rhoncus lacinia. Aenean tempor turpis purus, et aliquam erat euismod non. Sed sed turpis sit amet elit mollis fringilla.
 
