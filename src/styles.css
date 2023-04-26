@@ -1,12 +1,36 @@
 .homePage{
+    font-family: 'Urbanist';
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.false {
+.false{
     display: none;
 }
 .true{
     color: green;
+}
+
+.kuva1{
+    height: 100vh;
+    width: 100vw;
+}
+
+.otsikko{
+    position: relative;
+    width: 670px;
+    height: 255px;
+    left: 60vw;
+    top: 30vh;
+
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 96px;
+    line-height: 85px;
+    /* or 89% */
+
+    text-align: right;
+    color: #FFFFFF;
 }
