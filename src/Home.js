@@ -33,7 +33,7 @@ export default function Home() {
     "Olet täydellinen",
   ];
 
-  const [points, setPoints] = useState([5, 5, 5]); // Alussa amat arvot kuin statementListillä
+  const [points, setPoints] = useState([5, 5, 5, 5, 5, 5, 5, 5, 5, 5]); // Alussa amat arvot kuin statementListillä
   const [grade, setGrade] = useState(null);
 
   const handlePointsChange = (index, value) => {
@@ -44,7 +44,7 @@ export default function Home() {
 
   const calculateGrade = () => {
     const total = points.reduce((acc, cur) => acc + cur, 0);
-    const percentage = total / (points.length * 100);
+    const percentage = total / (points.length * 10);
     const grade = Math.round(percentage * 5);
     setGrade(grade);
   };
