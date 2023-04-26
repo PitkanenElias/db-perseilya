@@ -45,12 +45,24 @@ body {
   margin-right: 10vw;
 }
 
-.kuva1 {
-  width: 100vw;
-}
 
 .sliderVaihtoehdot {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+  .kuva1{
+    width: 100vw;
+    filter: brightness(0.8);
+}
+    
+
+.punchLine{
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.lakeScenery {
+    width: 60vw;
 }
