@@ -57,6 +57,10 @@ export default function Home() {
         purus dapibus non. Aenean urna nulla, bibendum id mattis sed, viverra
         facilisis mauris.
       </p>
+      <div className="punchLine">
+        <img className="lakeScenery" src={require("./images/lakeScenery.jpg")} alt="" />
+
+      </div>
       <div>
         <h2>Testaa kuinka paha ilmastotuholainen oletkaan</h2>
         <div>
@@ -76,7 +80,6 @@ export default function Home() {
                   <p>harvemmin</p>
                   <p>lähes aina</p>
                 </div>
-                <label>{points[index]}</label>
               </div>
             );
           })}
