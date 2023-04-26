@@ -6,11 +6,25 @@
     line-height: 38px;
     text-align: center;
     
-    color: #F7F7F2;
+    color: #2d2d2b;
 }
 
 .valikko{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.nappi1:hover{
+    color: #acaca5;
+}
+
+.nappi2:hover{
+    color: #acaca5;
+}
+
+.nappi3:hover{
+    color: #acaca5;
 }

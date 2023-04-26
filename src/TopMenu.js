@@ -19,14 +19,11 @@ export default function TopMenu() {
 
   return (
     <div className="kaikki">
-      <p>*********************************************************</p>
-      <h2>Tämä on TopMenu/heading ja se on jokaisella sivun yläpäässä</h2>
       <div className="valikko">
-        <button onClick={handleClickHome}>Etusivu</button>
-        <button onClick={handleClickInfo}>Tietoa</button>
-        <button onClick={handleClickAbout}>Meistä</button>
+        <p className="nappi1" onClick={handleClickHome}>Etusivu</p>
+        <p className="nappi2" onClick={handleClickInfo}>Tietoa</p>
+        <p className="nappi3" onClick={handleClickAbout}>Meistä</p>
       </div>
-      <p>*********************************************************</p>
     </div>
   );
 };
