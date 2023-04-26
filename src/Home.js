@@ -76,7 +76,6 @@ export default function Home() {
                   <p>harvemmin</p>
                   <p>lähes aina</p>
                 </div>
-                <label>{points[index]}</label>
               </div>
             );
           })}
