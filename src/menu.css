@@ -2,7 +2,7 @@
     font-family: 'Urbanist';
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 38px;
     text-align: center;
     
@@ -11,6 +11,8 @@
     justify-content: space-between;
     width: 100vw;
     z-index: 1;
+
+    background-color: #ffffff6d;
 }
 
 .valikko{
@@ -19,6 +21,7 @@
     justify-content: space-between;
     margin-left: 10vw;
     margin-right: 10vw;
+    z-index: 2;
 }
 
 .nappi1:hover{
