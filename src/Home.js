@@ -41,8 +41,9 @@ export default function Home() {
 
   return (
     <div className="homePage">
+      <img className="kuva1" src={require("./images/kyselykuva.jpeg")} alt="tama on kuva"></img>
       <h1 className="otsikko">HIILINEUTRAALI SUOMI 2035</h1>
-      <p>
+      <p className="ekaTeksti">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum
         ultricies sapien, tempor vestibulum risus rutrum non. Praesent aliquam
         accumsan nulla ut ultrices. Morbi feugiat faucibus justo, sit amet

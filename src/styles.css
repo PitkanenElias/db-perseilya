@@ -38,3 +38,15 @@ body {
     text-align: right;
     color: #FFFFFF;
 }
+
+.ekaTeksti{
+    text-align: left;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.kuva1{
+    width: 100vw;
+    z-index: -2;
+    
+}
