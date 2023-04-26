@@ -10,9 +10,19 @@ export default function Home() {
 
   // Tästä alkavat slideriin ja interaktiiviseen kyselyyn liittyvät arvot ja funktiot
   const statementList = [
-    { statement: "En aja autolla töihin", value: 5 },
+    { statement: "Käytän joukkoliikennettä auton sijasta", value: 5 },
     { statement: "Syön kasvisruokaa", value: 5 },
-    { statement: "En matkusta lentokoneella", value: 5 },
+    { statement: "Vältän lentokoneella matkustamista", value: 5 },
+    {
+      statement: "Kotini lämmitykseen käytetään uusiutuvaa energiaa",
+      value: 5,
+    },
+    { statement: "Ostan uusiutuvaa sähköä", value: 5 },
+    { statement: "ym", value: 5 },
+    { statement: "jne", value: 5 },
+    { statement: "tms", value: 5 },
+    { statement: "tjsp", value: 5 },
+    { statement: "tba", value: 5 },
   ];
   const feedBack = [
     "Olet ilmastontuhoaja. Koita parantaa tapasi",
@@ -59,12 +69,19 @@ export default function Home() {
         Curabitur non arcu sed lacus varius faucibus. Donec quis maximus eros,
         vulputate tincidunt enim. Aenean volutpat ullamcorper est, id maximus
         purus dapibus non. Aenean urna nulla, bibendum id mattis sed, viverra
-        facilisis mauris. 
+        facilisis mauris.
       </p>
       <div className="punchLine">
-        <img className="lakeScenery" src={require("./images/lakeScenery.jpg")} alt="" />
+        <img
+          className="lakeScenery"
+          src={require("./images/lakeScenery.jpg")}
+          alt=""
+        />
         <div className="testiIntro">
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quas minima quos in omnis?</p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quas
+            minima quos in omnis?
+          </p>
           <h4>Tee testi</h4>
         </div>
       </div>
