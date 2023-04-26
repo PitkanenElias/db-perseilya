@@ -3,4 +3,11 @@
     background-color: black;
     color: white;
     font-family: 'Urbanist';
+    padding-bottom: 30vh;
+    margin-top: 10vh;
+}
+
+.ministeriöLogo{
+    margin-top: 4vh;
+    margin-left: 2vw;
 }
