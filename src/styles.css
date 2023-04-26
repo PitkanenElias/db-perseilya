@@ -66,3 +66,30 @@ body {
 .lakeScenery {
     width: 60vw;
 }
+
+.otsikot{
+    display: flex;
+    flex-direction:column;
+    position: absolute;
+    top: 30vh;
+    right: 10vw;
+
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 1%;
+    /* or 89% */
+
+    text-align: right;
+    color: #f2e9e9;
+}
+
+.ekaTeksti{
+    position: absolute;
+    width: 50vw;
+    text-align: left;
+    left: 10vw;
+    top: 70vh;
+    color: #FFFFFF;
+}

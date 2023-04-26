@@ -46,7 +46,11 @@ export default function Home() {
         src={require("./images/kyselykuva.jpeg")}
         alt="tama on kuva"
       ></img>
-      <h1 className="otsikko">HIILINEUTRAALI SUOMI 2035</h1>
+      <div className="otsikot">
+        <h1 className="otsikko1">HIILINEUTRAALI</h1>
+        <h1 className="otsikko2">SUOMI</h1>
+        <h1 className="otsikko3">2035</h1>
+      </div>
       <p className="ekaTeksti">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum
         ultricies sapien, tempor vestibulum risus rutrum non. Praesent aliquam
@@ -55,11 +59,14 @@ export default function Home() {
         Curabitur non arcu sed lacus varius faucibus. Donec quis maximus eros,
         vulputate tincidunt enim. Aenean volutpat ullamcorper est, id maximus
         purus dapibus non. Aenean urna nulla, bibendum id mattis sed, viverra
-        facilisis mauris.
+        facilisis mauris. 
       </p>
       <div className="punchLine">
         <img className="lakeScenery" src={require("./images/lakeScenery.jpg")} alt="" />
-
+        <div className="testiIntro">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quas minima quos in omnis?</p>
+          <h4>Tee testi</h4>
+        </div>
       </div>
       <div>
         <h2>Testaa kuinka paha ilmastotuholainen oletkaan</h2>
