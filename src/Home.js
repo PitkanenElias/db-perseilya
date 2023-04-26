@@ -55,12 +55,7 @@ export default function Home() {
         Curabitur non arcu sed lacus varius faucibus. Donec quis maximus eros,
         vulputate tincidunt enim. Aenean volutpat ullamcorper est, id maximus
         purus dapibus non. Aenean urna nulla, bibendum id mattis sed, viverra
-        facilisis mauris. Praesent lacinia porttitor blandit. Duis ac rutrum
-        risus, sit amet venenatis ligula. Praesent aliquam venenatis turpis, at
-        vulputate ligula venenatis vel. Nunc erat massa, semper sit amet elit
-        eget, euismod posuere enim. Nunc vestibulum accumsan ligula, et vehicula
-        neque consequat sed. Ut ut elit egestas enim dapibus rhoncus non eu
-        metus. Aliquam erat volutpat.
+        facilisis mauris. 
       </p>
       <div>
         <h2>Testaa kuinka paha ilmastotuholainen oletkaan</h2>
