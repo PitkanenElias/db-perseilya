@@ -1,56 +1,56 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
-.homePage{
-    font-family: 'Urbanist';
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.homePage {
+  font-family: "Urbanist";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.false{
-    display: none;
+.false {
+  display: none;
 }
-.true{
-    color: green;
-}
-
-.kuva1{
-    height: 100vh;
-    width: 100vw;
-    filter: blur(30%) brightness(20%);
-    
+.true {
+  color: green;
 }
 
-.otsikot{
-    display: flex;
-    flex-direction:column;
-    position: absolute;
-    top: 30vh;
-    right: 10vw;
-
-    font-family: 'Urbanist';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 1%;
-    /* or 89% */
-
-    text-align: right;
-    color: #f2e9e9;
+.kuva1 {
+  height: 100vh;
+  width: 100vw;
 }
 
-.ekaTeksti{
-    position: absolute;
-    width: 50vw;
-    text-align: left;
-    left: 10vw;
-    top: 70vh;
-    color: #FFFFFF;
+.otsikko {
+  position: relative;
+  width: 670px;
+  height: 255px;
+  left: 60vw;
+  top: 30vh;
+
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 96px;
+  line-height: 85px;
+  /* or 89% */
+
+  text-align: right;
+  color: #ffffff;
 }
 
-.kuva1{
-    width: 100vw;
-    
+.ekaTeksti {
+  text-align: left;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.kuva1 {
+  width: 100vw;
+}
+
+.sliderVaihtoehdot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

@@ -41,12 +41,12 @@ export default function Home() {
 
   return (
     <div className="homePage">
-      <img className="kuva1" src={require("./images/kyselykuva-2.jpeg")} alt="tama on kuva"></img>
-      <div className="otsikot">
-        <h1 className="otsikko1">HIILINEUTRAALI</h1>
-        <h1 className="otsikko2">SUOMI</h1>
-        <h1 className="otsikko3">2035</h1>
-      </div>
+      <img
+        className="kuva1"
+        src={require("./images/kyselykuva.jpeg")}
+        alt="tama on kuva"
+      ></img>
+      <h1 className="otsikko">HIILINEUTRAALI SUOMI 2035</h1>
       <p className="ekaTeksti">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum
         ultricies sapien, tempor vestibulum risus rutrum non. Praesent aliquam
@@ -55,7 +55,7 @@ export default function Home() {
         Curabitur non arcu sed lacus varius faucibus. Donec quis maximus eros,
         vulputate tincidunt enim. Aenean volutpat ullamcorper est, id maximus
         purus dapibus non. Aenean urna nulla, bibendum id mattis sed, viverra
-        facilisis mauris. 
+        facilisis mauris.
       </p>
       <div>
         <h2>Testaa kuinka paha ilmastotuholainen oletkaan</h2>
@@ -72,6 +72,10 @@ export default function Home() {
                   onChange={(value) => handlePointsChange(index, value)}
                   onAfterChange={calculateGrade}
                 />
+                <div className="sliderVaihtoehdot">
+                  <p>harvemmin</p>
+                  <p>lähes aina</p>
+                </div>
                 <label>{points[index]}</label>
               </div>
             );
