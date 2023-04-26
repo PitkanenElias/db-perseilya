@@ -6,10 +6,11 @@
     line-height: 38px;
     text-align: center;
     
-    color: #f5f5ec;
-    position: absolute;
+    color: #242423;
+    position: fixed;
     justify-content: space-between;
     width: 100vw;
+    z-index: 1;
 }
 
 .valikko{
@@ -21,13 +22,13 @@
 }
 
 .nappi1:hover{
-    color: #242423;
+    color: #ffffff;
 }
 
 .nappi2:hover{
-    color: #242423;
+    color: #ffffff;
 }
 
 .nappi3:hover{
-    color: #242423;
+    color: #ffffff;
 }
