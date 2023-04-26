@@ -19,6 +19,7 @@ body {
 .kuva1 {
   height: 100vh;
   width: 100vw;
+  filter: blur(30%) brightness(20%);
 }
 
 .otsikko {
@@ -36,7 +37,7 @@ body {
   /* or 89% */
 
   text-align: right;
-  color: #ffffff;
+  color: #f2e9e9;
 }
 
 .ekaTeksti {
@@ -45,51 +46,51 @@ body {
   margin-right: 10vw;
 }
 
-
 .sliderVaihtoehdot {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-  .kuva1{
-    width: 100vw;
-    filter: brightness(0.8);
+.kuva1 {
+  width: 100vw;
+  filter: brightness(0.8);
 }
-    
 
-.punchLine{
-    width: 100vw;
-    display: flex;
-    justify-content: flex-end;
+.punchLine {
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .lakeScenery {
-    width: 60vw;
+  width: 60vw;
 }
 
-.otsikot{
-    display: flex;
-    flex-direction:column;
-    position: absolute;
-    top: 30vh;
-    right: 10vw;
+.otsikot {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30vh;
+  right: 10vw;
 
-    font-family: 'Urbanist';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 1%;
-    /* or 89% */
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 1%;
+  /* or 89% */
 
-    text-align: right;
-    color: #f2e9e9;
+  text-align: right;
+  color: #f2e9e9;
 }
 
-.ekaTeksti{
-    position: absolute;
-    width: 50vw;
-    text-align: left;
-    left: 10vw;
-    top: 70vh;
-    color: #FFFFFF;
+.ekaTeksti {
+  position: absolute;
+  width: 50vw;
+  text-align: left;
+  left: 10vw;
+  top: 70vh;
+  color: #ffffff;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
