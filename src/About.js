@@ -8,7 +8,7 @@ export default function About() {
     const handleScroll = () => {
         const scrollPosition = window.pageYOffset;
         // Tämä kertoo, missä kohtaa animaation kuuluu lähteä liikkelle, tai mitä ikinä halutaankaan tehdä
-        const targetPosition = 200;
+        const targetPosition = 600;
         if (scrollPosition > targetPosition) {
         setShouldAnimate(true);
         }
