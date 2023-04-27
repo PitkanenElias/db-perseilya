@@ -52,7 +52,7 @@ body {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 30vh;
+  top: 25vh;
   right: 10vw;
 
   font-family: "Urbanist";
@@ -70,9 +70,14 @@ body {
   position: absolute;
   width: 50vw;
   text-align: left;
-  left: 10vw;
-  top: 70vh;
+  top: 75vh;
+  left: 0vw;
   color: #ffffff;
   margin-left: 10vw;
   margin-right: 10vw;
+}
+
+.kysymykset{
+  text-align: center;
+  font-size: 1rem;
 }

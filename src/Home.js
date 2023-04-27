@@ -13,13 +13,10 @@ export default function Home() {
     { statement: "Käytän joukkoliikennettä auton sijasta", value: 5 },
     { statement: "Syön kasvisruokaa", value: 5 },
     { statement: "Vältän lentokoneella matkustamista", value: 5 },
-    {
-      statement: "Kotini lämmitykseen käytetään uusiutuvaa energiaa",
-      value: 5,
-    },
+    { statement: "Kotini lämmitykseen käytetään uusiutuvaa energiaa",value: 5 },
     { statement: "Ostan uusiutuvaa sähköä", value: 5 },
+    { statement: "Vältän turhia ostoksia", value: 5 },
     { statement: "ym", value: 5 },
-    { statement: "jne", value: 5 },
     { statement: "tms", value: 5 },
     { statement: "tjsp", value: 5 },
     { statement: "tba", value: 5 },
@@ -91,7 +88,7 @@ export default function Home() {
           {statementList.map((statement, index) => {
             return (
               <div key={index}>
-                <p>{statement.statement}</p>
+                <p className="kysymykset" >{statement.statement}</p>
                 <Slider
                   value={points[index]}
                   min={0}
