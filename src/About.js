@@ -60,6 +60,9 @@ export default function About() {
                     <img alt="ongelmia kuvan kanssa"></img>
                     <img alt="ongelmia kuvan kanssa"></img>
                     <img alt="ongelmia kuvan kanssa"></img>
+                    <img alt="ongelmia kuvan kanssa"></img>
+                    <img alt="ongelmia kuvan kanssa"></img>
+                    <img alt="ongelmia kuvan kanssa"></img>
                 </div>
             </div>
         </div>
