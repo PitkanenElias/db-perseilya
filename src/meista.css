@@ -77,11 +77,11 @@ h3{
 
 .igGrid{
     display: grid;
-    height: 70vh;
+    height: 300px;
     width: 100vw;
 
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 20vh 20vh;
+    grid-template-rows: 100px 100px 100px;
     grid-row-gap: 10px;
     grid-column-gap: 10px;
 }
