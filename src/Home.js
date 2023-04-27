@@ -10,19 +10,47 @@ export default function Home() {
 
   // Tästä alkavat slideriin ja interaktiiviseen kyselyyn liittyvät arvot ja funktiot
   const statementList = [
-    { statement: "Käytän joukkoliikennettä auton sijasta", value: 5 },
-    { statement: "Syön kasvisruokaa", value: 5 },
-    { statement: "Vältän lentokoneella matkustamista", value: 5 },
     {
+      intro:
+        "Liikenne ja matkailu muodostaa 29% keskivertosuomalaisen hiilijalanjäljestä.",
+      statement: "Käytän joukkoliikennettä henkilöauton sijasta",
+      value: 5,
+    },
+    {
+      intro:
+        "Lentomatkailun hiilidioksidipäästöt ovat noin 175 – 300 kiloa per henkilö 1000 kilometrin matkalla. ",
+      statement: "Vältän lentokoneella matkustamista",
+      value: 5,
+    },
+    {
+      intro: "...",
+      statement: "tba",
+      value: 5,
+    },
+    {
+      intro: "Asuminen muodostaa 20% keskivertosuomalaisen hiilijalanjäljestä.",
       statement: "Kotini lämmitykseen käytetään uusiutuvaa energiaa",
       value: 5,
     },
-    { statement: "Ostan uusiutuvaa sähköä", value: 5 },
-    { statement: "ym", value: 5 },
-    { statement: "jne", value: 5 },
-    { statement: "tms", value: 5 },
-    { statement: "tjsp", value: 5 },
-    { statement: "tba", value: 5 },
+    {
+      intro: "...",
+      statement: "Ostan uusiutuvaa sähköä",
+      value: 5,
+    },
+    {
+      intro: "Ruoka muodostaa 18% keskivertosuomalaisen hiilijalanjäljestä.",
+      statement: "Syön kasvisruokaa",
+      value: 5,
+    },
+    { intro: "intro7", statement: "jne", value: 5 },
+    { intro: "intro8", statement: "tms", value: 5 },
+    {
+      intro:
+        "Muu kulutus muodostaa 33% keskivertosuomalaisen hiilijalanjäljestä.",
+      statement: "tjsp",
+      value: 5,
+    },
+    { intro: "intro10", statement: "tba", value: 5 },
   ];
   const feedBack = [
     "Olet ilmastontuhoaja. Koita parantaa tapasi",
@@ -91,6 +119,7 @@ export default function Home() {
           {statementList.map((statement, index) => {
             return (
               <div key={index}>
+                <p>{statement.intro}</p>
                 <p>{statement.statement}</p>
                 <Slider
                   value={points[index]}
