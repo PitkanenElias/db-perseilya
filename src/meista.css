@@ -1,10 +1,10 @@
 .alaotsikko{
     position: absolute;
-    font-style: italic;
+    font-style: normal;
     text-align: right;
-    font-size: 5rem;
+    font-size: 7rem;
     color: #e6e4df;
-    top: 20vh;
+    top: 10vh;
     left: 20vw;
     width: 50vw;
 }
@@ -24,6 +24,13 @@
     left: 10vw;
 }
 
+
+.igNimi{
+    text-align: center;
+    font-size: 2rem;
+    margin: 3rem;
+}
+
 h3{
     text-align: center;
     font-size: 3rem;
@@ -35,7 +42,18 @@ h3{
     display: flex;
     flex-direction: row;
     width: 90vw;
-    margin-bottom: 5vh;
+    margin-bottom: 15vh;
+    margin-top: 15vh;
+}
+
+.kohta1 img {
+    width: 30vw;
+    object-fit: cover;
+}
+
+.kohta2 img {
+    width: 30vw;
+    object-fit: cover;
 }
 
 .kohta2{
@@ -55,4 +73,15 @@ h3{
     margin-left: 5vw;
     margin-right: 5vw;
     text-align: right;
+}
+
+.igGrid{
+    display: grid;
+    height: 70vh;
+    width: 100vw;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20vh 20vh;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
 }

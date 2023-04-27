@@ -35,7 +35,7 @@ export default function About() {
 
                         Ut congue pretium venenatis.
                     </p>
-                    <img alt="ongelmia kuvan kanssa"></img>
+                    <img src="" alt="ongelmia kuvan kanssa"></img>
                 </div>
                 <div className="kohta2">
                     <p className="isoTeksti2">
@@ -47,10 +47,20 @@ export default function About() {
 
                         Proin gravida id odio quis accumsan. Cras a nulla massa. 
                     </p>
-                    <img alt="ongelmia kuvan kanssa"></img>
+                    <img src="" alt="ongelmia kuvan kanssa"></img>
                 </div>
                 <h2 className={shouldAnimate.toString()}>Tämä ilmestyy scrollatessa ja tämän voisi animoida kauniisti. Näitä voi myös tehdä paljon lisää</h2>
-                <p> Tänne tekstiä hiilineutraaliuudesta</p>
+                <p className="igNimi"> Seuraa meitä myös Instagramissa @hiitelonsuomi</p>
+            </div>
+            <div className="someKuvat">
+                <div className="igGrid">
+                    <img alt="ongelmia kuvan kanssa"></img>
+                    <img alt="ongelmia kuvan kanssa"></img>
+                    <img alt="ongelmia kuvan kanssa"></img>
+                    <img alt="ongelmia kuvan kanssa"></img>
+                    <img alt="ongelmia kuvan kanssa"></img>
+                    <img alt="ongelmia kuvan kanssa"></img>
+                </div>
             </div>
         </div>
     )
