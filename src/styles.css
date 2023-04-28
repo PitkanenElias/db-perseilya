@@ -113,7 +113,7 @@ body {
     width: 20vw;
     border-radius: 1vw;
     position: absolute;
-    
+    font-size: 20px;
     color: white;
 }
 
@@ -142,11 +142,11 @@ a{
 }
 
 .deers {
-    width: 60vw;
+    width: 60vmax;
 }
 
 .metro {
-  width: 60vw;
+  width: 60vmax;
 }
 
 .kysymykset{
