@@ -122,21 +122,31 @@ export default function Home() {
         facilisis mauris.
       </p>
       <div className="punchLine">
-        <img
-          className="lakeScenery"
-          src={require("./images/lakeScenery.jpg")}
-          alt=""
-        />
-        <div className="testiIntro">
+        <img className="metro" src={require("./images/metro.jpg")} alt="julkinen liikenne"/>
+        <div className="introBox left">
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quas
             minima quos in omnis?
           </p>
-          <h4>Tee testi</h4>
+          <a href="#test"><h4 class="teeTesti">Tee testi</h4></a>
+        </div>
+      </div>
+      <div className="moreInformation">
+        <img
+          className="deers"
+          src={require("./images/deers.jpg")}
+          alt="peurakuva"
+        />
+        <div className="introBox right">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quas
+            minima quos in omnis?
+          </p>
+          <a href="#test"><h4 class="teeTesti">Lisää tietoa</h4></a>
         </div>
       </div>
       <div className="interaktiivinenKysely">
-        <h2>Testaa kuinka paha ilmastotuholainen oletkaan</h2>
+        <h2 id="test">Testaa kuinka paha ilmastotuholainen oletkaan</h2>
         <div>
           {statementList.map((statement, index) => {
             return (

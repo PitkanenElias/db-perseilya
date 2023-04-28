@@ -62,16 +62,6 @@ body {
   filter: brightness(0.8);
 }
 
-.punchLine {
-  width: 100vw;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.lakeScenery {
-  width: 60vw;
-}
-
 .otsikot {
   display: flex;
   flex-direction: column;
@@ -101,28 +91,73 @@ body {
   margin-right: 10vw;
 }
 
-.testiIntro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgba(46, 63, 48, 0.85);
-  padding: 50px;
-  width: 30vw;
-  border-radius: 0.5vw;
-  position: absolute;
-  transform: translate(-45vw, 3vh);
-}
-
 .punchLine {
   width: 100vw;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+
+.introBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(46,63,48, 0.85);
+    padding: 50px;
+    max-height: 30vh;
+    width: 20vw;
+    border-radius: 1vw;
+    position: absolute;
+    
+    color: white;
+}
+
+.left{
+  transform: translate(-45vw);
+}
+.right{
+  transform: translate(45vw);
+}
+
+h4{
+  margin: 0;
+}
+a{
+  color: white;
+  text-decoration: none;
+  background-color: #222725;
+  padding: 5%;
+  margin: 0;
+  border-radius: 5%;
+}
+.punchLine{
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .lakeScenery {
+    width: 60vw;
+}
+
+.metro {
   width: 60vw;
 }
-.kysymykset {
+
+.kysymykset{
   text-align: center;
   font-size: 1rem;
+}
+.moreInformation{
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
