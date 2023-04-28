@@ -1,5 +1,5 @@
 import React, { useEffect, useState} from "react"
-import "./meista.css"
+import "./info.css"
 export default function About() {
 
     const [shouldAnimate, setShouldAnimate] = useState(false);
