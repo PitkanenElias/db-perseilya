@@ -19,24 +19,7 @@ body {
 .kuva1 {
   height: 100vh;
   width: 100vw;
-}
-
-.otsikko {
-  position: relative;
-  width: 670px;
-  height: 255px;
-  left: 60vw;
-  top: 30vh;
-
-  font-family: "Urbanist";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 96px;
-  line-height: 85px;
-  /* or 89% */
-
-  text-align: right;
-  color: #ffffff;
+  filter: blur(30%) brightness(20%);
 }
 
 .ekaTeksti {
@@ -45,17 +28,66 @@ body {
   margin-right: 10vw;
 }
 
-
 .sliderVaihtoehdot {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-  .kuva1{
-    width: 100vw;
-    filter: brightness(0.8);
+.kuva1 {
+  width: 100vw;
+  filter: brightness(0.8);
 }
-    
+
+.punchLine {
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lakeScenery {
+  width: 60vw;
+}
+
+.otsikot {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 25vh;
+  right: 10vw;
+
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 1%;
+  /* or 89% */
+
+  text-align: right;
+  color: #f2e9e9;
+}
+
+.ekaTeksti {
+  position: absolute;
+  width: 50vw;
+  text-align: left;
+  top: 75vh;
+  left: 0vw;
+  color: #ffffff;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.testiIntro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(46,63,48, 0.85);
+    padding: 50px;
+    width: 30vw;
+    border-radius: 0.5vw;
+    position: absolute;
+    transform: translate(-45vw, 3vh);
+}
 
 .punchLine{
     width: 100vw;
@@ -65,4 +97,8 @@ body {
 
 .lakeScenery {
     width: 60vw;
+}
+.kysymykset{
+  text-align: center;
+  font-size: 1rem;
 }

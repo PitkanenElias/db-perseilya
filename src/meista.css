@@ -1,15 +1,90 @@
 .alaotsikko{
-    padding-top: 100px;
-    text-align: center;  
-    color: #000000;}
+    position: absolute;
+    font-style: normal;
+    text-align: right;
+    font-size: 6rem;
+    color: #e6e4df;
+    top: 10vh;
+    left: 20vw;
+    width: 50vw;
+}
 
-.teksti{font-family: 'Urbanist';
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        margin-left: 20px;}
+.sivu{
+    font-family: 'Urbanist';
+}
+
+.kuva1{
+    object-fit: fill;
+    z-index: -1;
+}
+
+.asiaa{
+    display: flex;
+    flex-direction: column;
+    left: 10vw;
+}
+
+.ilmestyy h2{
+    transition: 1s ease-in-out;
+}
+
+.igNimi{
+    text-align: center;
+    font-size: 2rem;
+    margin: 3rem;
+}
+
+h3{
+    text-align: center;
+    font-size: 3rem;
+    color: #2e2d2c;
+}
 
 
-.pallo1{ z-index: 0 ;
-        margin-top: 100px;
-        width: 30vw;}
+.kohta1{
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    margin-bottom: 15vh;
+    margin-top: 15vh;
+}
+
+.kohta1 img {
+    width: 30vw;
+    object-fit: cover;
+}
+
+.kohta2 img {
+    width: 30vw;
+    object-fit: cover;
+}
+
+.kohta2{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-bottom: 10vh;
+}
+
+.isoTeksti1{
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.isoTeksti2{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    text-align: right;
+}
+
+.igGrid{
+    display: grid;
+    height: 300px;
+    width: 100vw;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}

@@ -10,9 +10,47 @@ export default function Home() {
 
   // Tästä alkavat slideriin ja interaktiiviseen kyselyyn liittyvät arvot ja funktiot
   const statementList = [
-    { statement: "En aja autolla töihin", value: 5 },
-    { statement: "Syön kasvisruokaa", value: 5 },
-    { statement: "En matkusta lentokoneella", value: 5 },
+    {
+      intro:
+        "Liikenne ja matkailu muodostaa 29% keskivertosuomalaisen hiilijalanjäljestä.",
+      statement: "Käytän joukkoliikennettä henkilöauton sijasta",
+      value: 5,
+    },
+    {
+      intro:
+        "Lentomatkailun hiilidioksidipäästöt ovat noin 175 – 300 kiloa per henkilö 1000 kilometrin matkalla. ",
+      statement: "Vältän lentokoneella matkustamista",
+      value: 5,
+    },
+    {
+      intro: "...",
+      statement: "tba",
+      value: 5,
+    },
+    {
+      intro: "Asuminen muodostaa 20% keskivertosuomalaisen hiilijalanjäljestä.",
+      statement: "Kotini lämmitykseen käytetään uusiutuvaa energiaa",
+      value: 5,
+    },
+    {
+      intro: "...",
+      statement: "Ostan uusiutuvaa sähköä",
+      value: 5,
+    },
+    {
+      intro: "Ruoka muodostaa 18% keskivertosuomalaisen hiilijalanjäljestä.",
+      statement: "Syön kasvisruokaa",
+      value: 5,
+    },
+    { intro: "intro7", statement: "jne", value: 5 },
+    { intro: "intro8", statement: "tms", value: 5 },
+    {
+      intro:
+        "Muu kulutus muodostaa 33% keskivertosuomalaisen hiilijalanjäljestä.",
+      statement: "tjsp",
+      value: 5,
+    },
+    { intro: "intro10", statement: "tba", value: 5 },
   ];
   const feedBack = [
     "Olet ilmastontuhoaja. Koita parantaa tapasi",
@@ -23,7 +61,7 @@ export default function Home() {
     "Olet täydellinen",
   ];
 
-  const [points, setPoints] = useState([5, 5, 5]); // Alussa amat arvot kuin statementListillä
+  const [points, setPoints] = useState([5, 5, 5, 5, 5, 5, 5, 5, 5, 5]); // Alussa amat arvot kuin statementListillä
   const [grade, setGrade] = useState(null);
 
   const handlePointsChange = (index, value) => {
@@ -34,7 +72,7 @@ export default function Home() {
 
   const calculateGrade = () => {
     const total = points.reduce((acc, cur) => acc + cur, 0);
-    const percentage = total / (points.length * 100);
+    const percentage = total / (points.length * 10);
     const grade = Math.round(percentage * 5);
     setGrade(grade);
   };
@@ -46,7 +84,11 @@ export default function Home() {
         src={require("./images/kyselykuva.jpeg")}
         alt="tama on kuva"
       ></img>
-      <h1 className="otsikko">HIILINEUTRAALI SUOMI 2035</h1>
+      <div className="otsikot">
+        <h1 className="otsikko1">HIILINEUTRAALI</h1>
+        <h1 className="otsikko2">SUOMI</h1>
+        <h1 className="otsikko3">2035</h1>
+      </div>
       <p className="ekaTeksti">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum
         ultricies sapien, tempor vestibulum risus rutrum non. Praesent aliquam
@@ -58,8 +100,18 @@ export default function Home() {
         facilisis mauris.
       </p>
       <div className="punchLine">
-        <img className="lakeScenery" src={require("./images/lakeScenery.jpg")} alt="" />
-
+        <img
+          className="lakeScenery"
+          src={require("./images/lakeScenery.jpg")}
+          alt=""
+        />
+        <div className="testiIntro">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quas
+            minima quos in omnis?
+          </p>
+          <h4>Tee testi</h4>
+        </div>
       </div>
       <div>
         <h2>Testaa kuinka paha ilmastotuholainen oletkaan</h2>
@@ -67,6 +119,7 @@ export default function Home() {
           {statementList.map((statement, index) => {
             return (
               <div key={index}>
+                <p>{statement.intro}</p>
                 <p>{statement.statement}</p>
                 <Slider
                   value={points[index]}
