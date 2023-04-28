@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Slider } from "./Slider/Slider";
+import { useNavigate } from "react-router-dom";
 import "./styles.css";
 
 export default function Home() {
@@ -99,6 +100,17 @@ export default function Home() {
     setGrade(grade);
   };
 
+
+  /**
+   * Vaihtaa sivua info-sivulle
+   */
+
+  const navigate = useNavigate();
+
+  const handleClickInfo = () => {
+    navigate("/Info");
+  };
+
   return (
     <div className="homePage">
       <img
@@ -142,7 +154,7 @@ export default function Home() {
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quas
             minima quos in omnis?
           </p>
-          <a href="#test"><h4 class="teeTesti">Lisää tietoa</h4></a>
+          <a href="#"><h4 className="teeTesti" onClick={handleClickInfo}>Lisää tietoa</h4></a>
         </div>
       </div>
       <div className="interaktiivinenKysely">

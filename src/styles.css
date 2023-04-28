@@ -80,6 +80,7 @@ body {
   color: #f2e9e9;
 }
 
+
 .ekaTeksti {
   position: absolute;
   width: 50vw;
@@ -160,4 +161,25 @@ a{
   align-items: center;
   margin-top: 10vh;
   margin-bottom: 10vh;
+}
+
+h1{
+  animation-duration: 1.1s;
+  animation-name: slidein;
+  animation-timing-function: ease-out;
+}
+.otsikko2{
+  animation-duration: 1.3s;
+}
+.otsikko3{
+  animation-duration: 1.5s; 
+}
+@keyframes slidein{
+  from{
+    margin-right: 150vw;
+
+  }
+  to {
+    margin-right: 0%;
+  }
 }
