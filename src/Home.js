@@ -12,48 +12,70 @@ export default function Home() {
   const statementList = [
     {
       intro:
-        "Liikenne ja matkailu muodostaa 29% keskivertosuomalaisen hiilijalanjäljestä.",
+        "Liikenne ja matkailu muodostaa lähes kolmanneksen keskivertosuomalaisen hiilijalanjäljestä.",
       statement: "Käytän joukkoliikennettä henkilöauton sijasta",
       value: 5,
     },
     {
       intro:
-        "Lentomatkailun hiilidioksidipäästöt ovat noin 175 – 300 kiloa per henkilö 1000 kilometrin matkalla. ",
-      statement: "Vältän lentokoneella matkustamista",
+        "Lentomatkailun hiilidioksidipäästöt ovat noin 175 – 300 kiloa per henkilö 1000 kilometrin matkalla.",
+      statement:
+        "	Vältän lentomatkustamista tai korvaan sitä esimerkiksi junilla",
       value: 5,
     },
-    {
-      intro: "...",
-      statement: "tba",
-      value: 5,
-    },
-    {
-      intro: "Asuminen muodostaa 20% keskivertosuomalaisen hiilijalanjäljestä.",
-      statement: "Kotini lämmitykseen käytetään uusiutuvaa energiaa",
-      value: 5,
-    },
-    {
-      intro: "...",
-      statement: "Ostan uusiutuvaa sähköä",
-      value: 5,
-    },
-    {
-      intro: "Ruoka muodostaa 18% keskivertosuomalaisen hiilijalanjäljestä.",
-      statement: "Syön kasvisruokaa",
-      value: 5,
-    },
-    { intro: "intro7", statement: "jne", value: 5 },
-    { intro: "intro8", statement: "tms", value: 5 },
     {
       intro:
-        "Muu kulutus muodostaa 33% keskivertosuomalaisen hiilijalanjäljestä.",
-      statement: "tjsp",
+        "Asuminen muodostaa noin 20% keskivertosuomalaisen hiilijalanjäljestä.",
+      statement:
+        "Kotini lämmitykseen käytetään ekosähköä, maalämpöä tai vihreää kaukolämpöä",
       value: 5,
     },
-    { intro: "intro10", statement: "tba", value: 5 },
+    {
+      intro:
+        "Lämpötilan laskeminen yhdellä asteella merkitsee noin viisi prosenttia pienempää lämmityksen energiankulutusta.",
+      statement:
+        "Lasken huonelämpötilaa asteella tai parilla esimerkiksi öisin, kun olen pidempään pois kotoa tai huoneista joita en käytä",
+      value: 5,
+    },
+    {
+      intro:
+        "Vihreän sähkön eli uusiutuvilla luonnonvaroilla tuotetun sähkön laskennalliset kasvihuonekaasupäästöt ovat nolla.",
+      statement: "Ostan uusiutuvista energianlähteistä tuotettua sähköä",
+      value: 5,
+    },
+    {
+      intro:
+        "Vastuullisilla käyttötottumuksilla vedenkulutusta on mahdollista pienentää noin 10–30%.",
+      statement: "En vietä suihkussa ylimääräistä aikaa",
+      value: 5,
+    },
+    {
+      intro:
+        "Yksittäisistä elintarvikkeista naudanliha aiheuttaa suurimman ilmastovaikutuksen.",
+      statement: "	Rajoitan punaisen lihan kulutustani",
+      value: 5,
+    },
+    {
+      intro:
+        "Keskimäärin jokainen suomalainen heittää ruokaa roskiin noin 60 kilogrammaa vuodessa.",
+      statement: "Minimoin ruokahävikin suunnittelemalla ruokaostokseni",
+      value: 5,
+    },
+    {
+      intro:
+        "Huomion kiinnittäminen kulutusvalintoihin voi säästää esimerkiksi sähkölaskussa.",
+      statement: "Valitsen energiatehokkaita ja kestäviä tuotteita",
+      value: 5,
+    },
+    {
+      intro:
+        "Keskivertosuomalaisen vapaa-ajan ja palveluiden kulutuksen hiilijalanjälki on 1690 kiloa vuodessa.",
+      statement: "Vältän impulsiivista shoppailua ja ostan vain tarpeeseen",
+      value: 5,
+    },
   ];
   const feedBack = [
-    "Olet ilmastontuhoaja. Koita parantaa tapasi",
+    "Olet ilmastontuhoaja. Yritä parantaa tapasi",
     "Sinulla olisi vielä paljon parannettavaa",
     "Olet aika normaali",
     "Teet jo joitain juttuja hyvin",
