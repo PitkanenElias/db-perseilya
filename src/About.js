@@ -8,7 +8,7 @@ export default function About() {
     const handleScroll = () => {
         const scrollPosition = window.pageYOffset;
         // Tämä kertoo, missä kohtaa animaation kuuluu lähteä liikkelle, tai mitä ikinä halutaankaan tehdä
-        const targetPosition = 500;
+        const targetPosition = 1500;
         if (scrollPosition > targetPosition) {
         setShouldAnimate(true);
         }
@@ -24,7 +24,7 @@ export default function About() {
             <img className="kuva1" src={require("./images/aboutKuva.jpg")} alt="kuva metsästä"></img>
             <h2  className="alaotsikko">A little effort towards saving the environment is better than no effort</h2>
             <div className="asiaa">
-                <h3 className="toinenOtsikko">Lisätietoa Hiiletön Suomi-hankkeesta</h3>
+                <h3 className="toinenOtsikko">Lisätietoa Hiilineutraali Suomi 2035-hankkeesta</h3>
                 <div className="kohta1">
                     <p className="isoTeksti1"> Tänne tekstiä ilmastonmuutoksesta  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida lectus vitae nisi efficitur, a tincidunt felis ornare. Nam varius varius pellentesque. Etiam malesuada, nunc eget interdum faucibus, erat nisl egestas lacus, eget ultrices nibh mi sit amet est. Mauris vel aliquet lorem. Integer gravida efficitur sagittis. Morbi efficitur, nunc in eleifend porta, lacus lectus aliquam diam, quis ultrices nulla dolor eget diam. Vestibulum nec elit ac lorem viverra sodales. Nam nec hendrerit leo, aliquam consectetur risus. Quisque eu elit quis est faucibus mollis. Pellentesque commodo nisl urna, nec auctor neque condimentum at. Quisque accumsan laoreet tortor vel sodales.
 
@@ -49,7 +49,9 @@ export default function About() {
                     </p>
                     <img src="" alt="ongelmia kuvan kanssa"></img>
                 </div>
-                <h2 className={shouldAnimate.toString()}>Tämä ilmestyy scrollatessa ja tämän voisi animoida kauniisti. Näitä voi myös tehdä paljon lisää</h2>
+                <div className="ilmestyy">
+                    <h2 className={shouldAnimate.toString()}>Tämä ilmestyy scrollatessa ja tämän voisi animoida kauniisti. Näitä voi myös tehdä paljon lisää</h2>
+                </div>
                 <p className="igNimi"> Seuraa meitä myös Instagramissa @hiitelonsuomi</p>
             </div>
             <div className="someKuvat">

@@ -2,7 +2,7 @@
     position: absolute;
     font-style: normal;
     text-align: right;
-    font-size: 7rem;
+    font-size: 6rem;
     color: #e6e4df;
     top: 10vh;
     left: 20vw;
@@ -24,6 +24,9 @@
     left: 10vw;
 }
 
+.ilmestyy h2{
+    transition: 1s ease-in-out;
+}
 
 .igNimi{
     text-align: center;
