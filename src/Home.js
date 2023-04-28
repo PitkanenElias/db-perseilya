@@ -135,14 +135,14 @@ export default function Home() {
           <h4>Tee testi</h4>
         </div>
       </div>
-      <div>
+      <div className="interaktiivinenKysely">
         <h2>Testaa kuinka paha ilmastotuholainen oletkaan</h2>
         <div>
           {statementList.map((statement, index) => {
             return (
-              <div key={index}>
-                <p>{statement.intro}</p>
-                <p>{statement.statement}</p>
+              <div className="kaikkiSliderit" key={index}>
+                <p className="sliderFakta">{statement.intro}</p>
+                <p className="sliderVäite">{statement.statement}</p>
                 <Slider
                   value={points[index]}
                   min={0}
