@@ -99,3 +99,11 @@ h3 {
   grid-row-gap: 10px;
   grid-column-gap: 10px;
 }
+
+/* Media Query vaikuttaa vain kapeisiin näyttöihin */
+
+@media only screen and (max-width: 650px) {
+  h3 {
+    font-size: 2rem;
+  }
+}

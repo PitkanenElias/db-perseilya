@@ -8,3 +8,11 @@
 .pääotsikko {
   margin-top: 30vh;
 }
+
+/* Media Query vaikuttaa vain kapeisiin näyttöihin */
+
+@media only screen and (max-width: 650px) {
+  .pääotsikko {
+    margin-top: 15vh;
+  }
+}
