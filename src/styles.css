@@ -186,8 +186,31 @@ h1 {
 @media only screen and (max-width: 650px) {
   .otsikot {
     font-size: 25px;
+    right: 3vw;
   }
   .introBox {
     font-size: 15px;
+  }
+  #test {
+    text-align: center;
+  }
+  .deers {
+    overflow: hidden;
+  }
+  .ekaTeksti {
+    width: 75vw;
+  }
+  .introBox {
+    width: 75vw;
+  }
+  .left {
+    transform: translate(0vw);
+    margin: 5vw;
+    padding: 5vw;
+  }
+  .right {
+    transform: translate(0vw);
+    margin: 5vw;
+    padding: 5vw;
   }
 }

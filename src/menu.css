@@ -1,41 +1,49 @@
-.kaikki{
-    font-family: 'Urbanist';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 38px;
-    text-align: center;
-    
-    color: #ffffff;
-    position: fixed;
-    justify-content: space-between;
-    width: 100vw;
-    z-index: 1;
+.kaikki {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: center;
 
-    background-color: #00000024;
+  color: #ffffff;
+  position: fixed;
+  justify-content: space-between;
+  width: 100vw;
+  z-index: 1;
+
+  background-color: #00000024;
 }
 
-.valikko{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    z-index: 2;
+.valikko {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  z-index: 2;
 }
 
-.nappi1:hover{
-    color: rgb(221, 212, 203);
-    cursor: pointer;
-
+.nappi1:hover {
+  color: rgb(221, 212, 203);
+  cursor: pointer;
 }
 
-.nappi2:hover{
-    color: rgb(221, 212, 203);
-    cursor: pointer;
+.nappi2:hover {
+  color: rgb(221, 212, 203);
+  cursor: pointer;
 }
 
-.nappi3:hover{
-    color: rgb(221, 212, 203);
-    cursor: pointer;
+.nappi3:hover {
+  color: rgb(221, 212, 203);
+  cursor: pointer;
+}
+
+/* Media Query vaikuttaa vain kapeisiin näyttöihin */
+
+@media only screen and (max-width: 650px) {
+  .kaikki {
+    font-size: 20px;
+    line-height: 15px;
+  }
 }
