@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Slider } from "./Slider/Slider";
+import { useNavigate } from "react-router-dom";
 import "./styles.css";
 
 export default function Home() {
@@ -99,6 +100,17 @@ export default function Home() {
     setGrade(grade);
   };
 
+
+  /**
+   * Vaihtaa sivua info-sivulle
+   */
+
+  const navigate = useNavigate();
+
+  const handleClickInfo = () => {
+    navigate("/Info");
+  };
+
   return (
     <div className="homePage">
       <img
@@ -122,27 +134,37 @@ export default function Home() {
         facilisis mauris.
       </p>
       <div className="punchLine">
-        <img
-          className="lakeScenery"
-          src={require("./images/lakeScenery.jpg")}
-          alt=""
-        />
-        <div className="testiIntro">
+        <img className="metro" src={require("./images/metro.jpg")} alt="julkinen liikenne"/>
+        <div className="introBox left">
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quas
             minima quos in omnis?
           </p>
-          <h4>Tee testi</h4>
+          <a href="#test"><h4 class="teeTesti">Tee testi</h4></a>
         </div>
       </div>
-      <div>
-        <h2>Testaa kuinka paha ilmastotuholainen oletkaan</h2>
+      <div className="moreInformation">
+        <img
+          className="deers"
+          src={require("./images/deers.jpg")}
+          alt="peurakuva"
+        />
+        <div className="introBox right">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quas
+            minima quos in omnis?
+          </p>
+          <a href="#"><h4 className="teeTesti" onClick={handleClickInfo}>Lisää tietoa</h4></a>
+        </div>
+      </div>
+      <div className="interaktiivinenKysely">
+        <h2 id="test">Testaa kuinka paha ilmastotuholainen oletkaan</h2>
         <div>
           {statementList.map((statement, index) => {
             return (
-              <div key={index}>
-                <p>{statement.intro}</p>
-                <p>{statement.statement}</p>
+              <div className="kaikkiSliderit" key={index}>
+                <p className="sliderFakta">{statement.intro}</p>
+                <p className="sliderVäite">{statement.statement}</p>
                 <Slider
                   value={points[index]}
                   min={0}
