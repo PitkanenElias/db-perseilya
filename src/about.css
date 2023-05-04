@@ -68,12 +68,6 @@ header {
 }
 
 @media (max-width: 850px) {
-  body {
-    background-image: url(./content/line-850.svg);
-    background-repeat: no-repeat;
-    background-size: 100vw;
-  }
-
   .grid-container {
     display: flex;
     flex-direction: column;

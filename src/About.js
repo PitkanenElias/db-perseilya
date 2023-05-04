@@ -17,7 +17,7 @@ export default function Info() {
       <body>
         <section class="grid-container">
           <div class="bg-path">
-            <img src="/content/line.svg" alt="background line" />
+            <img src="./images/line.svg" alt="background line" />
           </div>
           <div class="timeline-el">
             <p>
@@ -28,11 +28,11 @@ export default function Info() {
             </p>
           </div>
           <div class="timeline-el">
-            <img src="./content/un-flags.png" alt="united nations" />
+            <img src="./images/un-flags.png" alt="united nations" />
           </div>
           <div class="timeline-el">
             <img
-              src="./content/finnish-parliament.png"
+              src="./images/finnish-parliament.png"
               alt="finnish parliament"
             />
           </div>
@@ -54,10 +54,10 @@ export default function Info() {
             </p>
           </div>
           <div class="timeline-el">
-            <img src="./content/social-media.png" alt="social media" />
+            <img src="./images/social-media.png" alt="social media" />
           </div>
           <div class="timeline-el">
-            <img src="./content/crosswalk.png" alt="crosswalk people" />
+            <img src="./images/crosswalk.png" alt="crosswalk people" />
           </div>
           <div class="timeline-el">
             <p>
