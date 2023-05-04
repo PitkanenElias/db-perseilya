@@ -6,7 +6,8 @@ export default function Info() {
   <><head>
       <title>Circle Image Website</title>
       <link rel="stylesheet" type="text/css" href="styles.css" />
-    </head><body>
+    </head>
+     <body>
         <section class="grid-container">
           <div class="timeline-text">
             <p>
@@ -17,10 +18,10 @@ export default function Info() {
             </p>
           </div>
           <div class="timeline-photo">
-            <img src="./content/un-flags.png" alt="united nations" />
+            <img  alt="united nations" />
           </div>
           <div class="timeline-photo">
-            <img src="./content/finnish-parliament.png" alt="finnish parliament" />
+            <img alt="finnish parliament" />
           </div>
           <div class="timeline-text">
             <p>
@@ -40,10 +41,10 @@ export default function Info() {
             </p>
           </div>
           <div class="timeline-photo">
-            <img src="./content/linda-eyeroll.png" alt="eyeroll" />
+            <img  alt="eyeroll" />
           </div>
           <div class="timeline-photo">
-            <img src="./content/linda-eyeroll.png" alt="eyeroll" />
+            <img  alt="eyeroll" />
           </div>
           <div class="timeline-text">
             <p>
