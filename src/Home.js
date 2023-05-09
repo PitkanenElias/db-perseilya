@@ -100,7 +100,6 @@ export default function Home() {
     setGrade(grade);
   };
 
-
   /**
    * Vaihtaa sivua info-sivulle
    */
@@ -115,7 +114,7 @@ export default function Home() {
     <div className="homePage">
       <img
         className="kuva1"
-        src={require("./images/kyselykuva.jpeg")}
+        src={require("./images/aboutKuva.jpg")}
         alt="tama on kuva"
       ></img>
       <div className="otsikot">
@@ -134,13 +133,19 @@ export default function Home() {
         facilisis mauris.
       </p>
       <div className="punchLine">
-        <img className="metro" src={require("./images/metro.jpg")} alt="julkinen liikenne"/>
+        <img
+          className="metro"
+          src={require("./images/metro.jpg")}
+          alt="julkinen liikenne"
+        />
         <div className="introBox left">
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quas
             minima quos in omnis?
           </p>
-          <a href="#test"><h4 class="teeTesti">Tee testi</h4></a>
+          <a href="#test">
+            <h4 class="teeTesti">Tee testi</h4>
+          </a>
         </div>
       </div>
       <div className="moreInformation">
@@ -154,7 +159,11 @@ export default function Home() {
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quas
             minima quos in omnis?
           </p>
-          <a href="#"><h4 className="teeTesti" onClick={handleClickInfo}>Lisää tietoa</h4></a>
+          <a href="#">
+            <h4 className="teeTesti" onClick={handleClickInfo}>
+              Lisää tietoa
+            </h4>
+          </a>
         </div>
       </div>
       <div className="interaktiivinenKysely">
