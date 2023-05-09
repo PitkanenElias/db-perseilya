@@ -114,7 +114,7 @@ export default function Home() {
     <div className="homePage">
       <img
         className="kuva1"
-        src={require("./images/aboutKuva.jpg")}
+        src={require("./images/webp/aboutKuva.webp")}
         alt="tama on kuva"
       ></img>
       <div className="otsikot">
