@@ -17,7 +17,7 @@ export default function Info() {
       <body>
         <section class="grid-container">
           <div class="bg-path">
-            <img src="./images/line.svg" alt="background line" />
+            <img src={require("./images/line.svg")} alt="katkoviiva" />
           </div>
           <div class="timeline-el">
             <p>
@@ -28,12 +28,15 @@ export default function Info() {
             </p>
           </div>
           <div class="timeline-el">
-            <img src="./images/un-flags.png" alt="united nations" />
+            <img
+              src={require("./images/webp/un-flags.webp")}
+              alt="YK-maiden lippuja"
+            ></img>
           </div>
           <div class="timeline-el">
             <img
-              src="./images/finnish-parliament.png"
-              alt="finnish parliament"
+              src={require("./images/webp/finnish-parliament.webp")}
+              alt="tuoleja istuntosalissa"
             />
           </div>
           <div class="timeline-el">
@@ -54,10 +57,16 @@ export default function Info() {
             </p>
           </div>
           <div class="timeline-el">
-            <img src="./images/social-media.png" alt="social media" />
+            <img
+              src={require("./images/webp/social-media.webp")}
+              alt="some-tykkäys"
+            />
           </div>
           <div class="timeline-el">
-            <img src="./images/crosswalk.png" alt="crosswalk people" />
+            <img
+              src={require("./images/webp/crosswalk.webp")}
+              alt="ihmisiä ylittämässä suojatietä"
+            />
           </div>
           <div class="timeline-el">
             <p>
@@ -82,6 +91,10 @@ export default function Info() {
               ja heidän tarpeidensa tyydyttämiseen vaadittavat resurssit
               luodaan.
             </p>
+            <img
+              src={require("./images/webp/smog.webp")}
+              alt="savusumua kaupungissa"
+            />
           </div>
           <div class="timeline-el">
             <p>
@@ -93,6 +106,10 @@ export default function Info() {
               työpaikkojen, patenttiteknologian ja kestävän talouskasvun
               muodossa.
             </p>
+            <img
+              src={require("./images/webp/green-city.webp")}
+              alt="vihreää nurmikkoa"
+            />
           </div>
         </section>
       </body>
