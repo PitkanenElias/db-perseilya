@@ -143,7 +143,7 @@ Tervetuloa mukaan tekemään Suomesta maailman kärkimaata!
             <br/><br/>Entä minkälainen vaikutus sinun käytökselläsi on tavoitteen saavuttamiseen?
           </p>
           <a href="#test">
-            <h4 class="teeTesti">Tee testi</h4>
+            <h4 className="teeTesti">Tee testi</h4>
           </a>
         </div>
       </div>
@@ -165,8 +165,9 @@ Tervetuloa mukaan tekemään Suomesta maailman kärkimaata!
           </a>
         </div>
       </div>
+      <div id="test"></div>
       <div className="interaktiivinenKysely">
-        <h2 id="test">Testaa kuinka paha ilmastotuholainen oletkaan</h2>
+        <h2>Testaa kuinka paha ilmastotuholainen oletkaan</h2>
         <div>
           {statementList.map((statement, index) => {
             return (
