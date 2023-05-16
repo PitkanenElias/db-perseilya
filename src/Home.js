@@ -139,7 +139,7 @@ export default function Home() {
           alt="julkinen liikenne"
         />
         <div className="introBox left">
-          <p>
+          <p className="leipaTeksti">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quas
             minima quos in omnis?
           </p>
@@ -155,7 +155,7 @@ export default function Home() {
           alt="peurakuva"
         />
         <div className="introBox right">
-          <p>
+          <p className="leipaTeksti">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quas
             minima quos in omnis?
           </p>

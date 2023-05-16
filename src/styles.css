@@ -19,6 +19,7 @@ body {
 .kuva1 {
   height: 100vh;
   width: 100vw;
+  position: relative;
   filter: blur(30%) brightness(20%);
 }
 
@@ -26,6 +27,7 @@ body {
   text-align: left;
   margin-left: 10vw;
   margin-right: 10vw;
+  position: absolute;
 }
 
 .interaktiivinenKysely {
@@ -84,7 +86,7 @@ body {
   position: absolute;
   width: 50vw;
   text-align: left;
-  top: 75vh;
+  bottom: 15px;
   left: 0vw;
   color: #ffffff;
   margin-left: 10vw;
@@ -107,7 +109,6 @@ body {
   justify-content: space-between;
   background-color: rgba(46, 63, 48, 0.85);
   padding: 50px;
-  max-height: 30vh;
   width: 20vw;
   border-radius: 1vw;
   position: absolute;
@@ -183,9 +184,15 @@ h1 {
 
 /* Media Query vaikuttaa vain kapeisiin näyttöihin */
 
+@media only screen and (max-width: 850px) {
+  .otsikot{
+    font-size: 5.5vw;
+  }
+}
+
 @media only screen and (max-width: 650px) {
   .otsikot {
-    font-size: 25px;
+    font-size: 6.5vw;
     right: 3vw;
   }
   .introBox {
@@ -204,13 +211,21 @@ h1 {
     width: 75vw;
   }
   .left {
-    transform: translate(0vw);
+    transform: translate(0);
     margin: 5vw;
     padding: 5vw;
   }
   .right {
-    transform: translate(0vw);
+    transform: translate(0);
     margin: 5vw;
     padding: 5vw;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .otsikot{
+    font-size: 20px;
+  }
+  .ekaTeksti{
+    font-size: 15px; 
   }
 }
