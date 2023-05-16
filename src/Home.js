@@ -114,7 +114,7 @@ export default function Home() {
     <div className="homePage">
       <img
         className="kuva1"
-        src={require("./images/webp/aboutKuva.webp")}
+        src={require("./images/revontulet.jpg")}
         alt="tama on kuva"
       ></img>
       <div className="otsikot">
@@ -123,14 +123,13 @@ export default function Home() {
         <h1 className="otsikko3">2035</h1>
       </div>
       <p className="ekaTeksti">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum
-        ultricies sapien, tempor vestibulum risus rutrum non. Praesent aliquam
-        accumsan nulla ut ultrices. Morbi feugiat faucibus justo, sit amet
-        mollis nisl scelerisque id. Cras facilisis tincidunt massa ut mattis.
-        Curabitur non arcu sed lacus varius faucibus. Donec quis maximus eros,
-        vulputate tincidunt enim. Aenean volutpat ullamcorper est, id maximus
-        purus dapibus non. Aenean urna nulla, bibendum id mattis sed, viverra
-        facilisis mauris.
+      Puun, paperin, Nokian ja Supercellin jälkeen, mistä rakennamme Suomeen seuraavan
+kansallisen vientituotteen?<br/><br/>
+Hiilineutraali Suomi 2035 -kampanja tekee suomalaisista pioneereja ilmastotekojen alalla.
+Jokapäiväisillä teoilla sinäkin voit liittyä uraauuravan muutostyön kärkijoukkoon – käy
+tekemässä omaa toimintaasi mittaava testi tai tutustu kampanjamme historiaan ja sisältöihin
+sivustollamme.<br/><br/>
+Tervetuloa mukaan tekemään Suomesta maailman kärkimaata!
       </p>
       <div className="punchLine">
         <img

@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #F7F7F2;
 }
 
 .homePage {
@@ -16,18 +17,17 @@ body {
   color: green;
 }
 
-.kuva1 {
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-  filter: blur(30%) brightness(20%);
-}
-
 .ekaTeksti {
   text-align: left;
   margin-left: 10vw;
   margin-right: 10vw;
   position: absolute;
+  font-size: 18px;
+  width: 35vw;
+  text-align: left;
+  bottom: 15px;
+  left: 0;
+  color: #ffffff;
 }
 
 .interaktiivinenKysely {
@@ -61,7 +61,8 @@ body {
 }
 .kuva1 {
   width: 100vw;
-  filter: brightness(0.8);
+  position: relative;
+  filter: brightness(0.55);
 }
 
 .otsikot {
@@ -80,17 +81,6 @@ body {
 
   text-align: right;
   color: #f2e9e9;
-}
-
-.ekaTeksti {
-  position: absolute;
-  width: 50vw;
-  text-align: left;
-  bottom: 15px;
-  left: 0vw;
-  color: #ffffff;
-  margin-left: 10vw;
-  margin-right: 10vw;
 }
 
 .punchLine {
@@ -142,10 +132,12 @@ a {
 
 .deers {
   width: 60vmax;
+  filter: brightness(0.8)
 }
 
 .metro {
   width: 60vmax;
+  filter: brightness(0.75)
 }
 
 .kysymykset {
@@ -188,6 +180,10 @@ h1 {
   .otsikot{
     font-size: 5.5vw;
   }
+  .ekaTeksti{
+    width: 75vw;
+    font-size: 15px;
+  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -203,9 +199,6 @@ h1 {
   }
   .deers {
     overflow: hidden;
-  }
-  .ekaTeksti {
-    width: 75vw;
   }
   .introBox {
     width: 75vw;
