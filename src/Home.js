@@ -117,17 +117,16 @@ export default function Home() {
     window.scrollTo({
       top: 0,
       left: 0,
-      behavior: "instant"
+      behavior: "instant",
     });
   }, []);
-
 
   return (
     <div className="homePage">
       <img
         className="kuva1"
-        src={require("./images/revontulet.jpg")}
-        alt="tama on kuva"
+        src={require("./images/webp/revontulet.webp")}
+        alt="talvinen maisema"
       ></img>
       <div className="otsikot">
         <h1 className="otsikko1">HIILINEUTRAALI</h1>
@@ -135,13 +134,18 @@ export default function Home() {
         <h1 className="otsikko3">2035</h1>
       </div>
       <p className="ekaTeksti">
-      Puun, paperin, Nokian ja Supercellin jälkeen, mistä rakennamme Suomeen seuraavan
-kansallisen vientituotteen?<br/><br/>
-Hiilineutraali Suomi 2035 -kampanja tekee suomalaisista pioneereja ilmastotekojen alalla.
-Jokapäiväisillä teoilla sinäkin voit liittyä uraauuravan muutostyön kärkijoukkoon – käy
-tekemässä omaa toimintaasi mittaava testi tai tutustu kampanjamme historiaan ja sisältöihin
-sivustollamme.<br/><br/>
-Tervetuloa mukaan tekemään Suomesta maailman kärkimaata!
+        Puun, paperin, Nokian ja Supercellin jälkeen, mistä rakennamme Suomeen
+        seuraavan kansallisen vientituotteen?
+        <br />
+        <br />
+        Hiilineutraali Suomi 2035 -kampanja tekee suomalaisista pioneereja
+        ilmastotekojen alalla. Jokapäiväisillä teoilla sinäkin voit liittyä
+        uraauuravan muutostyön kärkijoukkoon – käy tekemässä omaa toimintaasi
+        mittaava testi tai tutustu kampanjamme historiaan ja sisältöihin
+        sivustollamme.
+        <br />
+        <br />
+        Tervetuloa mukaan tekemään Suomesta maailman kärkimaata!
       </p>
       <div id="menuColor"></div>
       <div className="punchLine">
@@ -152,8 +156,12 @@ Tervetuloa mukaan tekemään Suomesta maailman kärkimaata!
         />
         <div className="introBox left">
           <p className="leipaTeksti">
-            Tiedostatko sinä jo ne asiat, jotka ovat ratkaisevassa asemassa hiilineutraaliuden saavuttamisessa?
-            <br/><br/>Entä minkälainen vaikutus sinun käytökselläsi on tavoitteen saavuttamiseen?
+            Tiedostatko sinä jo ne asiat, jotka ovat ratkaisevassa asemassa
+            hiilineutraaliuden saavuttamisessa?
+            <br />
+            <br />
+            Entä minkälainen vaikutus sinun käytökselläsi on tavoitteen
+            saavuttamiseen?
           </p>
           <a href="#test">
             <h4 className="teeTesti">Tee testi</h4>
@@ -168,8 +176,15 @@ Tervetuloa mukaan tekemään Suomesta maailman kärkimaata!
         />
         <div className="introBox right">
           <p className="leipaTeksti">
-            Vähemmän puhetta, enemmän tekoja.<br/><br/>Mitä suomalaisten tulisi tehdä, jotta Suomi säilyttäisi asemansa maailman 
-            ratkaisevana ilmastomuutoksen hillitsijänä?<br/><br/>Viisaampina pystymme tekemään parempia valintoja ympäristön kannalta.
+            Vähemmän puhetta, enemmän tekoja.
+            <br />
+            <br />
+            Mitä suomalaisten tulisi tehdä, jotta Suomi säilyttäisi asemansa
+            maailman ratkaisevana ilmastomuutoksen hillitsijänä?
+            <br />
+            <br />
+            Viisaampina pystymme tekemään parempia valintoja ympäristön
+            kannalta.
           </p>
           <a href="#">
             <h4 className="teeTesti" onClick={handleClickTietoa}>
@@ -178,7 +193,6 @@ Tervetuloa mukaan tekemään Suomesta maailman kärkimaata!
           </a>
         </div>
       </div>
-      <div id="test"></div>
       <div className="interaktiivinenKysely">
         <h2>Testaa kuinka paha ilmastotuholainen oletkaan</h2>
         <div>
@@ -203,9 +217,13 @@ Tervetuloa mukaan tekemään Suomesta maailman kärkimaata!
             );
           })}
           <strong className="result">Tuloksesi:</strong>
-          {(grade || grade === 0) && (
+          {(grade !== undefined || grade === null) && (
             <div>
-              <h2>{feedBack[grade]}</h2>
+              <h2>
+                {grade !== null
+                  ? feedBack[grade]
+                  : "Vastaa kysymyksiin saadaksesi tuloksen"}
+              </h2>
             </div>
           )}
           <p className="anchorUnderlined" onClick={handleClickTietoa}>
