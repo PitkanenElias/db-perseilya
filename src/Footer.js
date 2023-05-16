@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="some">
           <img
             src={require("./images/webp/Instagram.webp")}
-            className="someItem"
+            className="someItem footerImg"
             width={50}
             alt="Instagram-logo"
           />
@@ -17,7 +17,7 @@ export default function Footer() {
         <div className="some">
           <img
             src={require("./images/webp/Twitter.webp")}
-            className="someItem"
+            className="someItem footerImg"
             alt="Twitter-logo"
           />
           <p className="someItem">@hiiletonsuomi</p>
@@ -25,7 +25,7 @@ export default function Footer() {
         <div className="some">
           <img
             src={require("./images/webp/Facebook.webp")}
-            className="someItem"
+            className="someItem footerImg"
             width={50}
             alt="Facebook-logo"
           />
