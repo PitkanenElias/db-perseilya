@@ -257,10 +257,10 @@ h1 {
     width: 70vw;
   }
   .left {
-    transform: translate(-10vw, 100px);
+    transform: translate(-10vw, 50px);
   }
   .right {
-    transform: translate(10vw, 100px);
+    transform: translate(10vw, 50px);
   }
   .interaktiivinenKysely{
     margin-top: 200px;
