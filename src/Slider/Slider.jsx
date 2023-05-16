@@ -3,7 +3,7 @@ import "./slider.css";
 
 export function Slider(props) {
   return (
-    <div class="slidecontainer">
+    <div className="slidecontainer">
       <input
         type="range"
         min="0"

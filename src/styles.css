@@ -102,7 +102,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(25, 57, 43, 0.89);
+  background-color: rgba(25, 57, 43, 0.80);
   padding: 35px;
   padding-bottom: 25px;
   width: 30vw;
@@ -111,6 +111,10 @@ body {
   font-size: 20px;
   color: white;
   z-index: 1;
+  transition: all ease-out 0.5s;
+}
+.introBox:hover{
+  background-color: rgba(25, 57, 43);
 }
 
 .left {
@@ -136,12 +140,14 @@ a {
 }
 a:hover {
   color: black;
-  background-color: #f7f7f2;
+  background-color: #F7F7F2;
+  font-weight: 1000;
 }
 
-.deers {
+#deers {
   width: 60vmax;
   filter: brightness(0.8);
+  transform: translateX(0);
 }
 
 .metro {

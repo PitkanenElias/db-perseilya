@@ -100,6 +100,7 @@ export default function Home() {
     setGrade(grade);
   };
 
+
   /**
    * Vaihtaa sivua Tietoa-sivulle
    */
@@ -109,6 +110,7 @@ export default function Home() {
   const handleClickTietoa = () => {
     navigate("/Tietoa");
   };
+
 
   /**
    * Avaa sivun aina yläosasta, instant estää "liukuvan siirroksen"
@@ -120,6 +122,31 @@ export default function Home() {
       behavior: "instant",
     });
   }, []);
+
+
+  /**
+   * Liikuttaa taustalla olevia kuvia, eli metrokuvaa ja peurakuvaa
+   */
+  const [deers, setDeers] = useState(null);
+  const [metro, setMetro] = useState(null);
+
+  useEffect(() =>{
+    const deerValue = document.getElementById("deers");
+    setDeers(deerValue);
+    const metroValue = document.getElementById("metro");
+    setMetro(metroValue);
+  }, []);
+
+  useEffect(() => {
+    if(deers){
+      window.addEventListener('scroll', () => {
+        let x = window.pageYOffset;
+        deers.style.transform = `translateX(${(x/9)-120}px)`;
+        metro.style.transform = `translateX(${-(x/9)+120}px)`;
+      });
+    }
+  }, [deers]);
+
 
   return (
     <div className="homePage">
@@ -150,18 +177,15 @@ export default function Home() {
       <div id="menuColor"></div>
       <div className="punchLine">
         <img
+          id="metro"
           className="metro"
           src={require("./images/webp/metro.webp")}
           alt="julkinen liikenne"
         />
         <div className="introBox left">
           <p className="leipaTeksti">
-            Tiedostatko sinä jo ne asiat, jotka ovat ratkaisevassa asemassa
-            hiilineutraaliuden saavuttamisessa?
-            <br />
-            <br />
-            Entä minkälainen vaikutus sinun käytökselläsi on tavoitteen
-            saavuttamiseen?
+            Tiedostatko sinä jo ne asiat, jotka ovat ratkaisevassa asemassa hiilineutraaliuden saavuttamisessa?
+            <br/><br/>Entä tiedätkö, minkälainen vaikutus sinun käytökselläsi on tavoitteen saavuttamiseen?
           </p>
           <a href="#test">
             <h4 className="teeTesti">Tee testi</h4>
@@ -170,7 +194,7 @@ export default function Home() {
       </div>
       <div className="moreInformation">
         <img
-          className="deers"
+          id="deers"
           src={require("./images/webp/deers.webp")}
           alt="peurakuva"
         />
@@ -186,7 +210,7 @@ export default function Home() {
             Viisaampina pystymme tekemään parempia valintoja ympäristön
             kannalta.
           </p>
-          <a href="#">
+          <a href="#random">
             <h4 className="teeTesti" onClick={handleClickTietoa}>
               Lisää tietoa
             </h4>
