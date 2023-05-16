@@ -174,10 +174,23 @@ h1 {
   }
 }
 
+.anchorUnderlined {
+  display: flex;
+  background: transparent;
+  color: #222725;
+  text-decoration: underline;
+  margin-top: 25px;
+}
+
+.result {
+  display: flex;
+  margin-top: 25px;
+}
+
 /* Media Query vaikuttaa vain kapeisiin näyttöihin */
 
 @media only screen and (max-width: 850px) {
-  .otsikot{
+  .otsikot {
     font-size: 5.5vw;
   }
   .ekaTeksti{
@@ -215,10 +228,10 @@ h1 {
   }
 }
 @media only screen and (max-width: 400px) {
-  .otsikot{
+  .otsikot {
     font-size: 20px;
   }
-  .ekaTeksti{
-    font-size: 15px; 
+  .ekaTeksti {
+    font-size: 15px;
   }
 }

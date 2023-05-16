@@ -188,12 +188,15 @@ Tervetuloa mukaan tekemään Suomesta maailman kärkimaata!
               </div>
             );
           })}
-
+          <strong className="result">Tuloksesi:</strong>
           {(grade || grade === 0) && (
             <div>
               <h2>{feedBack[grade]}</h2>
             </div>
           )}
+          <p className="anchorUnderlined" onClick={handleClickInfo}>
+            Klikkaa tästä oppiaksesi lisää hyödyllisiä ilmastotekoja
+          </p>
         </div>
       </div>
     </div>
