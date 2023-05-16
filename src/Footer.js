@@ -1,21 +1,44 @@
 import React from "react";
-import "./footerStyles.css"
+import "./footerStyles.css";
 
 export default function Footer() {
-    return (
-        <div className="footer">
-            <div className="footerVasen">
-                <div className="someLogot">
-                </div>
-                <div className="someLogot">
-                    <p className="ig">@hiiletonsuomi</p>
-                    <p className="twitter">@hiiletonsuomi</p>
-                    <p className="facebook">@hiiletonsuomi</p>
-                </div>
-            </div>
-            <div className="footerOikea">
-                <img className="ministeriöLogo" src={require("./images/ministerioLogo.svg")} alt="Ympäristöministeriö"/>
-            </div>
+  return (
+    <div className="footer">
+      <div className="footerVasen">
+        <div className="some">
+          <img
+            src={require("./images/webp/Instagram.webp")}
+            className="someItem"
+            width={50}
+            alt="Instagram-logo"
+          />
+          <p className="someItem">@hiiletonsuomi</p>
         </div>
-    )
-};
+        <div className="some">
+          <img
+            src={require("./images/webp/Twitter.webp")}
+            className="someItem"
+            alt="Twitter-logo"
+          />
+          <p className="someItem">@hiiletonsuomi</p>
+        </div>
+        <div className="some">
+          <img
+            src={require("./images/webp/Facebook.webp")}
+            className="someItem"
+            width={50}
+            alt="Facebook-logo"
+          />
+          <p className="someItem">@hiiletonsuomi</p>
+        </div>
+      </div>
+      <div className="footerOikea">
+        <img
+          className="ministeriöLogo"
+          src={require("./images/ministerioLogo.svg")}
+          alt="Ympäristöministeriö"
+        />
+      </div>
+    </div>
+  );
+}

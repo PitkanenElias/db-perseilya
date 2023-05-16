@@ -6,13 +6,45 @@
   background-color: #222725;
   color: white;
   font-family: "Urbanist";
-  font-size: 30px;
+  font-size: 20px;
   margin-top: 30vh;
 }
 
+.footerVasen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50vw;
+}
+
+.footerOikea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50vw;
+}
+
+.some {
+  display: flex;
+  flex-direction: row;
+  padding-block: 1vw;
+  align-self: center;
+}
+
+.someItem {
+  padding: 1vw;
+  align-self: center;
+}
+
+img {
+  width: 5vw;
+  height: 5vw;
+}
+
 .ministeriöLogo {
-  margin-top: 4vh;
-  margin-left: 2vw;
+  width: 40vw;
+  height: auto;
+  padding: 2vw;
 }
 
 /* Media Query vaikuttaa vain kapeisiin näyttöihin */
@@ -25,14 +57,11 @@
     font-size: 15px;
   }
   .footerVasen {
-    margin-left: 5vw;
-    margin-right: 5vw;
-  }
-  .someLogot {
-    display: flex;
+    width: 100vw;
+    align-items: center;
     flex-direction: row;
-    justify-content: space-around;
   }
+
   .footerOikea {
     margin: auto;
   }
