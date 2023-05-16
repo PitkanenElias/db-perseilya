@@ -141,8 +141,8 @@ export default function Home() {
     if(deers && metro){
       window.addEventListener('scroll', () => {
         let x = window.pageYOffset;
-        deers.style.transform = `translateX(${(x/9)-70}px)`;
-        metro.style.transform = `translateX(${-(x/9)+70}px)`;
+        metro.style.transform = `translateX(${-(x/9)+50}px)`;
+        deers.style.transform = `translateX(${(x/9)-110}px)`;
       });
     }
   }, [deers, metro]);
