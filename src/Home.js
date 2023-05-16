@@ -135,7 +135,7 @@ export default function Home() {
       <div className="punchLine">
         <img
           className="metro"
-          src={require("./images/metro.jpg")}
+          src={require("./images/webp/metro.webp")}
           alt="julkinen liikenne"
         />
         <div className="introBox left">
@@ -151,7 +151,7 @@ export default function Home() {
       <div className="moreInformation">
         <img
           className="deers"
-          src={require("./images/deers.jpg")}
+          src={require("./images/webp/deers.webp")}
           alt="peurakuva"
         />
         <div className="introBox right">

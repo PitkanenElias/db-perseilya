@@ -22,7 +22,7 @@ export default function About() {
       <div className="yläosa">
         <img
           className="kuva1"
-          src={require("./images/aboutKuva.jpg")}
+          src={require("./images/webp/aboutKuva.webp")}
           alt="kuva metsästä"
         ></img>
         <h2 className="alaotsikko">
