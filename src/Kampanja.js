@@ -4,6 +4,7 @@ import "./kampanja.css";
 export default function Info() {
   return (
     <>
+      <div id="menuColor"></div>
       <head>
         <title>Circle Image Website</title>
         <link rel="stylesheet" type="text/css" href="about.css" />

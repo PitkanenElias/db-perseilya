@@ -18,6 +18,7 @@ export default function About() {
   }, []);
 
   return (
+    <>
     <div className="sivu">
       <div className="yläosa">
         <img
@@ -30,6 +31,7 @@ export default function About() {
           effort
         </h2>
       </div>
+      <div id="menuColor"></div>
       <div className="asiaa">
         <h3 className="toinenOtsikko">
           Lisätietoa Hiilineutraali Suomi 2035-hankkeesta
@@ -132,5 +134,6 @@ export default function About() {
         </div>
       </div>
     </div>
+    </>
   );
 }

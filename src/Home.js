@@ -110,6 +110,7 @@ export default function Home() {
     navigate("/Tietoa");
   };
 
+
   return (
     <div className="homePage">
       <img
@@ -131,6 +132,7 @@ tekemässä omaa toimintaasi mittaava testi tai tutustu kampanjamme historiaan j
 sivustollamme.<br/><br/>
 Tervetuloa mukaan tekemään Suomesta maailman kärkimaata!
       </p>
+      <div id="menuColor"></div>
       <div className="punchLine">
         <img
           className="metro"
@@ -156,7 +158,7 @@ Tervetuloa mukaan tekemään Suomesta maailman kärkimaata!
         <div className="introBox right">
           <p className="leipaTeksti">
             Vähemmän puhetta, enemmän tekoja.<br/><br/>Mitä suomalaisten tulisi tehdä, jotta Suomi säilyttäisi asemansa maailman 
-            ratkaisevana ilmastomuutoksen hillitsijänä?
+            ratkaisevana ilmastomuutoksen hillitsijänä?<br/><br/>Viisaampina pystymme tekemään parempia valintoja ympäristön kannalta.
           </p>
           <a href="#">
             <h4 className="teeTesti" onClick={handleClickInfo}>
