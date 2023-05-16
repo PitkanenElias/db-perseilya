@@ -139,8 +139,8 @@ Tervetuloa mukaan tekemään Suomesta maailman kärkimaata!
         />
         <div className="introBox left">
           <p className="leipaTeksti">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quas
-            minima quos in omnis?
+            Tiedostatko sinä jo ne asiat, jotka ovat ratkaisevassa asemassa hiilineutraaliuden saavuttamisessa?
+            <br/><br/>Entä minkälainen vaikutus sinun käytökselläsi on tavoitteen saavuttamiseen?
           </p>
           <a href="#test">
             <h4 class="teeTesti">Tee testi</h4>
@@ -155,8 +155,8 @@ Tervetuloa mukaan tekemään Suomesta maailman kärkimaata!
         />
         <div className="introBox right">
           <p className="leipaTeksti">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quas
-            minima quos in omnis?
+            Vähemmän puhetta, enemmän tekoja.<br/><br/>Mitä suomalaisten tulisi tehdä, jotta Suomi säilyttäisi asemansa maailman 
+            ratkaisevana ilmastomuutoksen hillitsijänä?
           </p>
           <a href="#">
             <h4 className="teeTesti" onClick={handleClickInfo}>
