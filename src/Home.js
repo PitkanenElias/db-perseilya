@@ -138,14 +138,14 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    if(deers){
+    if(deers && metro){
       window.addEventListener('scroll', () => {
         let x = window.pageYOffset;
         deers.style.transform = `translateX(${(x/9)-120}px)`;
         metro.style.transform = `translateX(${-(x/9)+120}px)`;
       });
     }
-  }, [deers]);
+  }, [deers, metro]);
 
 
   return (
@@ -225,18 +225,20 @@ export default function Home() {
             return (
               <div className="kaikkiSliderit" key={index}>
                 <p className="sliderFakta">{statement.intro}</p>
-                <p className="sliderVäite">{statement.statement}</p>
-                <Slider
-                  value={points[index]}
-                  min={0}
-                  max={100}
-                  step={1}
-                  onChange={(value) => handlePointsChange(index, value)}
-                  onAfterChange={calculateGrade}
-                />
-                <div className="sliderVaihtoehdot">
-                  <p>harvemmin</p>
-                  <p>lähes aina</p>
+                <div className="sliderBox">
+                  <p className="sliderVäite">{statement.statement}</p>
+                  <Slider
+                    value={points[index]}
+                    min={0}
+                    max={100}
+                    step={1}
+                    onChange={(value) => handlePointsChange(index, value)}
+                    onAfterChange={calculateGrade}
+                  />
+                  <div className="sliderVaihtoehdot">
+                    <p>harvemmin</p>
+                    <p>lähes aina</p>
+                  </div>
                 </div>
               </div>
             );

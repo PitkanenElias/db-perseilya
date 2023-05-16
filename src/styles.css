@@ -46,12 +46,18 @@ body {
 .kaikkiSliderit {
   display: flex;
   flex-direction: column;
-  margin-left: 2vw;
-  margin-right: 2vw;
+  margin-bottom: 50px;
+}
+.sliderBox{
+  background-color: rgba(25, 57, 43, 0.80);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
 }
 
 .sliderFakta {
-  display: flex;
+  text-align: center;
   font-style: italic;
 }
 
@@ -134,7 +140,7 @@ a {
   background-color: #010101;
   padding: 5%;
   margin: 0;
-  border-radius: 5%;
+  border-radius: 5px;
   transition: all 0.3s;
   align-self: flex-start;
   scroll-behavior: auto;
@@ -278,6 +284,6 @@ h1 {
     transform: translate(10vw, 50px);
   }
   .interaktiivinenKysely {
-    margin-top: 200px;
+    margin-top: 60px;
   }
 }
