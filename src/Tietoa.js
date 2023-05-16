@@ -17,6 +17,17 @@ export default function About() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  /**
+   * Avaa sivun aina yläosasta
+   */
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant"
+    });
+  }, []);
+
   return (
     <>
     <div className="sivu">

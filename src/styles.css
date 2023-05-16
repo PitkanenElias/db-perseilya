@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   background-color: #F7F7F2;
@@ -105,7 +109,7 @@ body {
   position: absolute;
   font-size: 20px;
   color: white;
-
+  z-index: 1;
 }
 
 .left {
@@ -127,6 +131,7 @@ a {
   border-radius: 5%;
   transition: all 0.3s;
   align-self: flex-start;
+  scroll-behavior: auto;
 }
 a:hover{
   color: black;
@@ -226,19 +231,16 @@ h1 {
   }
   .introBox {
     font-size: 15px;
-    width: 60vw;
-  }
-  #test {
-    text-align: center;
+    width: 50vw;
   }
 
   .left {
-    transform: translate(0);
+    transform: translate(-30vw);
     margin: 5vw;
     padding: 5vw;
   }
   .right {
-    transform: translate(0);
+    transform: translate(30vw);
     margin: 5vw;
     padding: 5vw;
   }
@@ -249,5 +251,18 @@ h1 {
   }
   .ekaTeksti {
     font-size: 15px;
+  }
+  .introBox {
+    font-size: 15px;
+    width: 70vw;
+  }
+  .left {
+    transform: translate(-10vw, 100px);
+  }
+  .right {
+    transform: translate(10vw, 100px);
+  }
+  .interaktiivinenKysely{
+    margin-top: 200px;
   }
 }

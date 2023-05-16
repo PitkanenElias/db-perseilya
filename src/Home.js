@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Slider } from "./Slider/Slider";
 import { useNavigate } from "react-router-dom";
 import "./styles.css";
@@ -101,14 +101,25 @@ export default function Home() {
   };
 
   /**
-   * Vaihtaa sivua info-sivulle
+   * Vaihtaa sivua Tietoa-sivulle
    */
 
   const navigate = useNavigate();
 
-  const handleClickInfo = () => {
+  const handleClickTietoa = () => {
     navigate("/Tietoa");
   };
+
+  /**
+   * Avaa sivun aina yläosasta, instant estää "liukuvan siirroksen"
+   */
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant"
+    });
+  }, []);
 
 
   return (
@@ -161,7 +172,7 @@ Tervetuloa mukaan tekemään Suomesta maailman kärkimaata!
             ratkaisevana ilmastomuutoksen hillitsijänä?<br/><br/>Viisaampina pystymme tekemään parempia valintoja ympäristön kannalta.
           </p>
           <a href="#">
-            <h4 className="teeTesti" onClick={handleClickInfo}>
+            <h4 className="teeTesti" onClick={handleClickTietoa}>
               Lisää tietoa
             </h4>
           </a>
@@ -197,7 +208,7 @@ Tervetuloa mukaan tekemään Suomesta maailman kärkimaata!
               <h2>{feedBack[grade]}</h2>
             </div>
           )}
-          <p className="anchorUnderlined" onClick={handleClickInfo}>
+          <p className="anchorUnderlined" onClick={handleClickTietoa}>
             Klikkaa tästä oppiaksesi lisää hyödyllisiä ilmastotekoja
           </p>
         </div>

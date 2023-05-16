@@ -1,7 +1,19 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./kampanja.css";
 
 export default function Info() {
+
+  /**
+   * Avaa sivun aina yläosasta
+   */
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant"
+    });
+  }, []);
+  
   return (
     <>
       <div id="menuColor"></div>
