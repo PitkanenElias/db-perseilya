@@ -9,24 +9,24 @@ export default function TopMenu() {
     navigate("/");
   };
 
-  const handleClickInfo = () => {
+  const handleClickTietoa = () => {
     navigate("/Tietoa");
   };
 
-  const handleClickAbout = () => {
+  const handleClickKampanja = () => {
     navigate("/Kampanja");
   };
 
   return (
     <div className="kaikki">
       <div className="valikko">
-        <p className="nappi1" onClick={handleClickHome}>
+        <p className="nappi1 nappi" onClick={handleClickHome}>
           Etusivu
         </p>
-        <p className="nappi2" onClick={handleClickInfo}>
+        <p className="nappi2 nappi" onClick={handleClickTietoa}>
           Tietoa
         </p>
-        <p className="nappi3" onClick={handleClickAbout}>
+        <p className="nappi3 nappi" onClick={handleClickKampanja}>
           Kampanja
         </p>
       </div>
