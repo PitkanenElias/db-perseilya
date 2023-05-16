@@ -217,6 +217,7 @@ export default function Home() {
           </a>
         </div>
       </div>
+      <div id="test"></div>
       <div className="interaktiivinenKysely">
         <h2>Testaa kuinka paha ilmastotuholainen oletkaan</h2>
         <div>
