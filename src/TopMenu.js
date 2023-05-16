@@ -10,11 +10,11 @@ export default function TopMenu() {
   };
 
   const handleClickInfo = () => {
-    navigate("/Info");
+    navigate("/Tietoa");
   };
 
   const handleClickAbout = () => {
-    navigate("/About");
+    navigate("/Kampanja");
   };
 
   return (

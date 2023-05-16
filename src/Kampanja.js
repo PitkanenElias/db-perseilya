@@ -1,5 +1,5 @@
 import React from "react";
-import "./about.css";
+import "./kampanja.css";
 
 export default function Info() {
   return (

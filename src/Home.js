@@ -107,7 +107,7 @@ export default function Home() {
   const navigate = useNavigate();
 
   const handleClickInfo = () => {
-    navigate("/Info");
+    navigate("/Tietoa");
   };
 
   return (

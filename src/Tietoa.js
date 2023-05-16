@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./info.css";
+import "./tietoa.css";
 export default function About() {
   const [shouldAnimate, setShouldAnimate] = useState(false);
 
