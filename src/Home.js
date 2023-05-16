@@ -219,7 +219,7 @@ export default function Home() {
       </div>
       <div id="test"></div>
       <div className="interaktiivinenKysely">
-        <h2>Testaa kuinka paha ilmastotuholainen oletkaan</h2>
+        <h2 className="testiIntro">Tee testi ja näe, minkälainen vaikutus käytökselläsi on Suomen hiilineutraalius 2035 -tavoitteeseen</h2>
         <div>
           {statementList.map((statement, index) => {
             return (
