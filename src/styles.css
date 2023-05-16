@@ -125,7 +125,7 @@ a {
   padding: 5%;
   margin: 0;
   border-radius: 5%;
-  transition: all 0.2s;
+  transition: all 0.3s;
   align-self: flex-start;
 }
 a:hover{
