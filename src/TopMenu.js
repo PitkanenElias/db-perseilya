@@ -38,7 +38,7 @@ export default function TopMenu() {
       const target = document.getElementById("menuColor").offsetTop;
   
       if (position > target-1) {
-        setMenuColor('#01010195');
+        setMenuColor('#010101AA');
       } else {
         setMenuColor('transparent');
       }
