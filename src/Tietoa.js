@@ -133,18 +133,45 @@ export default function About() {
             Seuraa meitä myös Instagramissa @hiiletonsuomi
           </p>
         </div>
-        <div className="someKuvat">
-          <div className="igGrid">
-            <img alt="ongelmia kuvan kanssa"></img>
-            <img alt="ongelmia kuvan kanssa"></img>
-            <img alt="ongelmia kuvan kanssa"></img>
-            <img alt="ongelmia kuvan kanssa"></img>
-            <img alt="ongelmia kuvan kanssa"></img>
-            <img alt="ongelmia kuvan kanssa"></img>
-            <img alt="ongelmia kuvan kanssa"></img>
-            <img alt="ongelmia kuvan kanssa"></img>
-            <img alt="ongelmia kuvan kanssa"></img>
-          </div>
+        <div className="igRow">
+          <img
+            className="igPostaus"
+            id="ig1"
+            src={require("./images/webp/ig_fakta.webp")}
+            alt="Instagram-sisältöä"
+          />
+          <img
+            className="igPostaus"
+            id="ig2"
+            src={require("./images/webp/ig_ilmastoahdistus.webp")}
+            alt="Instagram-sisältöä"
+          />
+          <img
+            className="igPostaus"
+            id="ig3"
+            src={require("./images/webp/ig_kyselytulos.webp")}
+            alt="Instagram-sisältöä"
+          />
+        </div>
+        <div className="igRow">
+          <img
+            className="igPostaus"
+            id="ig4"
+            src={require("./images/webp/ig_kysymys.webp")}
+            alt="Instagram-sisältöä"
+          />
+          <img
+            className="igPostaus"
+            id="ig5"
+            src={require("./images/webp/ig_quote.webp")}
+            alt="Instagram-sisältöä"
+          />
+          <img
+            className="igPostaus"
+            id="ig6"
+            src={require("./images/webp/ig_tutkimus.webp")}
+            alt="Instagram-sisältöä"
+          />
         </div>
       </div>
     </>

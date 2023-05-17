@@ -84,32 +84,42 @@ h3 {
   text-align: right;
 }
 
-.someKuvat {
-  margin-left: 2vw;
-  margin-right: 2vw;
+.igRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-inline: 2vw;
 }
 
-.igGrid {
-  display: grid;
-  height: 300px;
-  width: 100vw;
-
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100px 100px 100px;
-  grid-row-gap: 10px;
-  grid-column-gap: 10px;
+.igPostaus {
+  display: flex;
+  margin: 20px;
+  width: 250px;
 }
 
 /* Media Query vaikuttaa vain kapeisiin näyttöihin */
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 900px) {
+  #ig3 {
+    display: none;
+  }
+  #ig6 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
   h3 {
     font-size: 2rem;
   }
   .alaotsikko {
     font-size: 5vh;
   }
-  .igGrid {
-    width: 96vw;
+  #ig2 {
+    display: none;
+  }
+
+  #ig5 {
+    display: none;
   }
 }

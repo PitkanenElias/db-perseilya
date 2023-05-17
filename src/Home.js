@@ -100,7 +100,6 @@ export default function Home() {
     setGrade(grade);
   };
 
-
   /**
    * Vaihtaa sivua Tietoa-sivulle
    */
@@ -110,7 +109,6 @@ export default function Home() {
   const handleClickTietoa = () => {
     navigate("/Tietoa");
   };
-
 
   /**
    * Avaa sivun aina yläosasta, instant estää "liukuvan siirroksen"
@@ -123,14 +121,13 @@ export default function Home() {
     });
   }, []);
 
-
   /**
    * Liikuttaa taustalla olevia kuvia, eli metrokuvaa ja peurakuvaa
    */
   const [deers, setDeers] = useState(null);
   const [metro, setMetro] = useState(null);
 
-  useEffect(() =>{
+  useEffect(() => {
     const deerValue = document.getElementById("deers");
     setDeers(deerValue);
     const metroValue = document.getElementById("metro");
@@ -138,15 +135,14 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    if(deers && metro){
-      window.addEventListener('scroll', () => {
+    if (deers && metro) {
+      window.addEventListener("scroll", () => {
         let x = window.pageYOffset;
-        metro.style.transform = `translateX(${-(x/9)+50}px)`;
-        deers.style.transform = `translateX(${(x/9)-110}px)`;
+        metro.style.transform = `translateX(${-(x / 9) + 50}px)`;
+        deers.style.transform = `translateX(${x / 9 - 110}px)`;
       });
     }
   }, [deers, metro]);
-
 
   return (
     <div className="homePage">
@@ -184,8 +180,12 @@ export default function Home() {
         />
         <div className="introBox left">
           <p className="leipaTeksti">
-            Tiedostatko sinä jo ne asiat, jotka ovat ratkaisevassa asemassa hiilineutraaliuden saavuttamisessa?
-            <br/><br/>Entä tiedätkö, minkälainen vaikutus sinun käytökselläsi on tavoitteen saavuttamiseen?
+            Tiedostatko sinä jo ne asiat, jotka ovat ratkaisevassa asemassa
+            hiilineutraaliuden saavuttamisessa?
+            <br />
+            <br />
+            Entä tiedätkö, minkälainen vaikutus sinun käytökselläsi on
+            tavoitteen saavuttamiseen?
           </p>
           <a href="#test">
             <h4 className="teeTesti">Tee testi</h4>
@@ -219,7 +219,10 @@ export default function Home() {
       </div>
       <div id="test"></div>
       <div className="interaktiivinenKysely">
-        <h2 className="testiIntro">Tee testi ja näe, minkälainen vaikutus käytökselläsi on Suomen hiilineutraalius 2035 -tavoitteeseen</h2>
+        <h2 className="testiIntro">
+          Tee testi ja näe, minkälainen vaikutus käytökselläsi on Suomen
+          hiilineutraalius 2035 -tavoitteeseen
+        </h2>
         <div>
           {statementList.map((statement, index) => {
             return (
