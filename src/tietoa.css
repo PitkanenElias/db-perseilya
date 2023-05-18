@@ -8,9 +8,9 @@
   position: absolute;
   font-style: normal;
   text-align: right;
-  font-size: 10vh;
+  font-size: clamp(50px, 5vw, 100px);
   color: #e6e4df;
-  top: 10vh;
+  top: 25vh;
   left: 20vw;
   width: 50vw;
   overflow: visible;
