@@ -71,6 +71,7 @@ export default function About() {
             <br/><br/>
             Vanhat aarniometsät ovat tärkeitä hiilivarastoja ja yhteistä perintöämme, jonka suojelijaksi jokainen voi ryhtyä. Lahjoittamalla esimerkiksi sata euroa vuosittain ikimetsien suojeluun varmistat, että alueet muuttuvat luonnonsuojelualueiksi, jotka varastoivat hiiltä sekä ylläpitävät lajien kirjoa. Sadalla eurolla Luonnonperintösäätiö ostaa 200 neliömetriä luonnonalueita ja rauhoittaa ne pysyvästi.            </p>
           </div>
+        </div>
           <div className="wrappaaja">
             <div className="information">
               <div className="lahde">
@@ -126,7 +127,7 @@ export default function About() {
               </div>
             </div>
           </div>
-        </div>
+        
         <p className="igNimi">
           {" "}
           Seuraa meitä myös Instagramissa @hiiletonsuomi
