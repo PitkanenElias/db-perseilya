@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import "./tietoa.css";
 export default function About() {
 
@@ -12,6 +12,30 @@ export default function About() {
       behavior: "instant",
     });
   }, []);
+
+
+  /**
+   * Liikuttaa taustalla olevia kuvia
+   */
+  const [compensate, setCompensate] = useState(null);
+  // const [metro, setMetro] = useState(null);
+
+  useEffect(() => {
+    const compensateValue = document.getElementById("compensate");
+    setCompensate(compensateValue);
+    // const metroValue = document.getElementById("metro");
+    // setMetro(metroValue);
+  }, []);
+
+  useEffect(() => {
+    if (compensate) {
+      window.addEventListener("scroll", () => {
+        let x = window.pageYOffset;
+        // metro.style.transform = `translateX(${-(x / 9) + 50}px)`;
+        compensate.style.transform = `translateX(${x / 9 - 110}px)`;
+      });
+    }
+  }, [compensate]);
 
   return (
     <>
@@ -32,14 +56,89 @@ export default function About() {
           <h3 className="toinenOtsikko">
             Lisätietoa Hiilineutraali Suomi 2035-hankkeesta
           </h3>
-          <div className="punchLine">
-            <img>
+          <p className="tietoTekstiä">
+          72 prosenttia koko maailman kasvihuonekaasupäästöistä aiheutuu kotitalouksien kulutuksesta. Tutkimuksen mukaan osuus on samaa luokkaa myös Suomessa: kotitalouksien kulutus muodostaa 68 prosenttia kotimaan loppukäytön kasvihuonekaasupäästöistä. Loput 32 prosenttia syntyvät julkisesta kulutuksesta ja investoinneista. Ilmastonmuutoksen hillintä edellyttääkin siis toimia koko yhteiskunnassa.
+          Vuonna 2010 suomalaisen kulutusmenoista keskimäärin aiheutuvat kasvihuonekaasupäästöt olivat 11,5 tCO2e per henkilö. (CO2e on hiilijalanjäljen yksikkö. Lyhenne tarkoittaa hiilidioksidiekvivalenttia eli ihmisen tuottamien kasvihuonekaasujen ilmastoa lämmittävää vaikutusta. Kirjain t yksikön edessä tarkoittaa tonnia.) Henkilöä kohden lasketut kulutuksen kasvihuonekaasupäästöt ovat Euroopan mittakaavassa korkeat. Koko maailman keskiarvo oli 6,0 tCO2e eli suomalaisten päästöt ovat tähän verrattuna lähes kaksinkertaiset.
+          </p>
+          <h3 className="väliOtsikko">Arkielämän osa-alueita:</h3>
+          <div className="">
+            <h4 className="väliväliOtsikko">Vedestä:</h4>
+            <p classNmae="tietoTekstiä">
+            Turha veden juoksutus, liian pitkät suihkut ja vuotavat vesikalusteet voi huomaamatta valuttaa hukkaan kymmeniä litroja vettä päivässä. Vähentämällä ylimääräistä veden kulutusta, voit sekä keventää ympäristön kuormaa että säästää omaa lompakkoasi.
+            <br/><br/>Kahdeksan minuutin suihku joka päivä maksaa sinulle vuodessa noin 300 euroa. Puolittamalla suihkussa käytetyn ajan puolitat samalla vedestä maksamasi laskun. Lämmin vesi maksaa keskimäärin yli kaksi kertaa enemmän kuin kylmä vesi. Puolittamalla suihkuajan kahdeksasta minuutista neljään minuuttiin hiilijalanjälkesi pienenee 0,5 % vuodessa. Asentamalla vesimittarin ja säästämällä 20 % vedenkulutuksesta pienennät hiilijalanjälkeäsi toisella 0,5 % vuodessa. Jos miljoona suomalaista tekisi näin, säästyisi lähes 9 000 henkilön kokonaishiilijalanjälki.
+            </p>
+          </div>
+          <div className="">
+            <h4 className="väliväliOtsikko">Energiasta:</h4>
+            <p classNmae="tietoTekstiä">
+            Kodeissa energiaa kuluu eniten lämmitykseen. Toiseksi eniten sähköä vie veden lämmittäminen. Onkin erityisen tärkeää varmistaa, että asunnon lämpötila on korkeintaan 21 astetta ja lämmintä vettä ei tuhlata.
+            <br/><br/>
+            Kodin energiatehokkuutta parantavista ratkaisuista ilmalämpöpumppu on kustannustehokkain. Talvella se lämmittää kodin tehokkaasti ja edullisesti, kun taas helteillä se jäähdyttää huoneilmaa. Ilmalämpöpumpun avulla hiilijalanjälkesi pienenee 4 % vuodessa. Jos miljoona suomalaista asentaisi ilmalämpöpumpun, säästyisi noin 39 000 henkilön kokonaishiilijalanjälki.
+            <br/><br/>
+            Kun asennat omakotitalon tai mökin katolle aurinkokeräimen, saat lämmintä käyttövettä ilmaiseksi. Asennettua järjestelmää tarvitsee huoltaa vain harvoin. Alkuinvestoinnin jälkeen säästöä syntyy muun muassa lämmityskustannuksissa ja hiilijalanjälkesi pienenee 7 % vuodessa. Jos miljoonaa suomalaista asentaisi keräimen, säästyisi 66 000 asukkaan kokonaishiilijalanjälki.
+            </p>
+          </div>
+          <div className="">
+            <h4 className="väliväliOtsikko">Kulkemisesta:</h4>
+            <p classNmae="tietoTekstiä">
+            Liikenne tuottaa noin 20 prosenttia Suomen kasvihuonekaasupäästöistä. Onneksi bensiinille on nykyään vähäpäästöisempiä vaihtoehtoja. Yksi näistä on bioetanoli, joka on biojätteestä valmistettu kotimainen ja ympäristöystävällinen valinta. Suomessa RE85-etanolipolttoainetta valmistetaan tähteistä, kuten hävikkileivästä. Pienellä investoinnilla voit muuttaa bensiini- tai dieselkäyttöisen auton RE85 käyttöiseksi, kunhan autossa ei ole suorasuihkumoottoria. Biojätteestä valmistetun etanolin osuus polttonesteessä laskee autoilun fossiilisia päästöjä jopa 80 prosenttia. Etanolikäyttöisellä autolla ajaminen polttomoottoriauton sijaan pienentää hiilijalanjälkeäsi 16,5 prosenttia vuodessa. Jos miljoonaa suomalaista tekisi näin, laskennallisesti säästyisi noin 181 000 asukkaan kokonaishiilijalanjälki.
+            <br/><br/>
+            Tai mitä jos pyytäisit kaverin kyytiin tai perustaisit kimppakyytiryhmän? Jaettu työmatka on myös oiva hetki aamupalaverille työporukan kesken. Jos matkustat kolmen henkilön kimppakyydissä kolmesti viikossa yksin ajamisen sijasta, pienenee hiilijalanjälkesi 1 % vuodessa. Jos miljoona suomalaista tekee näin, säästyy 11 000 suomalaisen hiilijalanjälki vuodessa.
+            <br/><br/>
+            Toisaalta etätyöpäivänä työt voit tehdä kotoa tai vaikkapa kahvilasta käsin. Työmatkoihin kuluva aika jää muuhun, ja joidenkin töiden tekeminen on tehokkaampaa. Jos työpaikallasi ei ole ollut tapana tehdä etätöitä, saattaa koko käsite olla työkavereiden keskuudessa vieras. Yksi etätyöpäivä viikossa pienentää hiilijalanjälkeä prosentin. Jos miljoona suomalaista tekee lisäksesi yhden etäpäivän viikossa, säästyy 11 000 henkilön hiilijalanjälki vuodessa.
+            </p>
+          </div>
+          <div className="">
+            <h4 className="väliväliOtsikko">Hankinnoista</h4>
+            <p classNmae="tietoTekstiä">
+            Haasta itsesi testaamaan kasvisruokavaliota vuoden ajan. Luvassa on taattuja hyötyjä. Ruokavalio monipuolistuu ja kokkaustaidot karttuvat. Kasvisruoka on edullista, terveellistä ja herkullista. Yhä useampi meistä on kasvissyöjä, joten valikoimaa ja vertaistukea on tarjolla runsaasti. Lihasta luopumalla voit pienentää hiilijalanjälkeäsi seitsemän prosenttia vuodessa. Säästö vastaa esimerkiksi 4100 autoilukilometriä.
+            <br/><br/>
+            Vanhat aarniometsät ovat tärkeitä hiilivarastoja ja yhteistä perintöämme, jonka suojelijaksi jokainen voi ryhtyä. Lahjoittamalla esimerkiksi sata euroa vuosittain ikimetsien suojeluun varmistat, että alueet muuttuvat luonnonsuojelualueiksi, jotka varastoivat hiiltä sekä ylläpitävät lajien kirjoa. Sadalla eurolla Luonnonperintösäätiö ostaa 200 neliömetriä luonnonalueita ja rauhoittaa ne pysyvästi.            </p>
+          </div>
+
+          <div className="information">
+            <img
               id="compensate"
-              className="compensate"
+              className="kuvaTaustalla"
               src={require("./images/compensateLogo.png")}
-              alt="julkinen liikenne" 
-              </img>
-            <div className="introBox">
+              alt="julkinen liikenne"
+            />
+            <div className="introBox normalPos">
+              <h3>Suomen ilmastopaneeli</h3>
+              <p className="leipaTeksti">
+              Ilmastopaneeli on tieteellinen ja riippumaton asiantuntijaelin, joka tukee ilmastopolitiikan suunnittelua ja sitä koskevaa päätöksentekoa. Paneeli edistää tieteen ja politiikan välistä vuoropuhelua ilmastokysymyksissä. Paneeli lausuu ilmastosuunnitelmien luonnoksista, antaa suosituksia hallituksen ilmastopoliittiseen päätöksentekoon ja vahvistaa monitieteellistä otetta ilmastotieteissä.
+              </p>
+              <a href="https://www.ilmastopaneeli.fi/">
+                <h4 className="teeTesti">Lisää tietoa</h4>
+              </a>
+            </div>
+          </div>
+          <div className="information">
+            <div className="introBox normalPos">
+              <h3>Motiva</h3>
+              <p className="leipaTeksti">
+              Motiva on valtion kestävän kehityksen yhtiö, joka kannustaa energian ja materiaalien tehokkaaseen ja kestävään käyttöön. Tarjoamme julkishallinnolle, yrityksille, kunnille ja kuluttajille tietoa, ratkaisuja ja palveluja, joiden avulla ne voivat tehdä resurssitehokkaita, vaikuttavia ja kestäviä valintoja
+              </p>
+              <a href="https://www.motiva.fi/">
+                <h4 className="teeTesti">Lisää tietoa</h4>
+              </a>
+            </div>
+            <img
+              id="compensate"
+              className="kuvaTaustalla"
+              src={require("./images/compensateLogo.png")}
+              alt="julkinen liikenne"
+            />
+          </div>
+          <div className="information">
+            <img
+              id="compensate"
+              className="kuvaTaustalla"
+              src={require("./images/compensateLogo.png")}
+              alt="julkinen liikenne"
+            />
+            <div className="introBox normalPos">
+              <h3>Sitoumus2050</h3>
               <p className="leipaTeksti">
                 Tiedostatko sinä jo ne asiat, jotka ovat ratkaisevassa asemassa
                 hiilineutraaliuden saavuttamisessa?
@@ -49,51 +148,15 @@ export default function About() {
                 tavoitteen saavuttamiseen?
               </p>
               <a href="https://www.compensate.com/">
-                <h4 className="teeTesti">Tutustu Compensate-säätiöön</h4>
+                <h4 className="teeTesti">Lisää tietoa</h4>
               </a>
             </div>
           </div>
-          <div className="kohta2">
-            <p className="isoTeksti2">
-              Cras vel felis id metus placerat consectetur. Fusce non vestibulum
-              lectus, in maximus arcu. Integer suscipit enim ut magna
-              sollicitudin, vitae facilisis tortor volutpat. Quisque in viverra
-              justo, vitae fringilla ipsum. Vivamus non consequat risus. Donec
-              volutpat lacus euismod convallis placerat. Praesent rutrum sapien
-              ut erat elementum tempus. Phasellus consectetur pulvinar lectus.
-              Vestibulum non porta augue. Etiam aliquet rutrum neque, in egestas
-              erat pulvinar et. Nunc placerat efficitur dolor, nec fermentum
-              lacus egestas at. Praesent porttitor consectetur augue nec tempus.
-              <br></br>
-              <br></br>
-              Quisque ultricies metus at sem ultricies luctus. Etiam ullamcorper
-              purus id condimentum tempor. Vestibulum sit amet imperdiet dui.
-              Quisque lacinia eget risus sed pellentesque. Mauris vestibulum est
-              et turpis fermentum venenatis. Suspendisse velit orci, viverra eu
-              rutrum in, tincidunt nec odio. Nulla eget quam facilisis,
-              dignissim risus ac, rhoncus risus. Proin accumsan leo et ultricies
-              commodo. In mauris risus, feugiat et magna ac, finibus dictum
-              nunc. Sed tristique lacus in facilisis scelerisque. Lorem ipsum
-              dolor sit amet, consectetur adipiscing elit. Sed gravida lectus
-              vitae nisi efficitur, a tincidunt felis ornare. Nam varius varius
-              pellentesque. Etiam malesuada, nunc eget interdum faucibus, erat
-              nisl egestas lacus, eget ultrices nibh mi sit amet est. Mauris vel
-              aliquet lorem. Integer gravida efficitur sagittis. Morbi
-              efficitur, nunc in eleifend porta, lacus lectus aliquam diam, quis
-              ultrices nulla dolor eget diam. Vestibulum nec elit ac lorem
-              viverra sodales. Nam nec hendrerit leo, aliquam consectetur risus.
-              Quisque eu elit quis est faucibus mollis. Pellentesque commodo
-              nisl urna, nec auctor neque condimentum at. Quisque accumsan
-              laoreet tortor vel sodales. Proin gravida id odio quis accumsan.
-              Cras a nulla massa.
-            </p>
-            <img src="" alt="ongelmia kuvan kanssa"></img>
-          </div>
-          <p className="igNimi">
-            {" "}
-            Seuraa meitä myös Instagramissa @hiiletonsuomi
-          </p>
         </div>
+        <p className="igNimi">
+          {" "}
+          Seuraa meitä myös Instagramissa @hiiletonsuomi
+        </p> 
         <div className="igRow">
           <img
             className="igPostaus"
