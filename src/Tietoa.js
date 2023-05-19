@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {useEffect} from "react";
 import "./tietoa.css";
 export default function About() {
 
@@ -32,44 +32,26 @@ export default function About() {
           <h3 className="toinenOtsikko">
             Lisätietoa Hiilineutraali Suomi 2035-hankkeesta
           </h3>
-          <div className="kohta1">
-            <p className="isoTeksti1">
-              {" "}
-              Tänne tekstiä ilmastonmuutoksesta Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Sed gravida lectus vitae nisi
-              efficitur, a tincidunt felis ornare. Nam varius varius
-              pellentesque. Etiam malesuada, nunc eget interdum faucibus, erat
-              nisl egestas lacus, eget ultrices nibh mi sit amet est. Mauris vel
-              aliquet lorem. Integer gravida efficitur sagittis. Morbi
-              efficitur, nunc in eleifend porta, lacus lectus aliquam diam, quis
-              ultrices nulla dolor eget diam. Vestibulum nec elit ac lorem
-              viverra sodales. Nam nec hendrerit leo, aliquam consectetur risus.
-              Quisque eu elit quis est faucibus mollis. Pellentesque commodo
-              nisl urna, nec auctor neque condimentum at. Quisque accumsan
-              laoreet tortor vel sodales. Proin gravida id odio quis accumsan.
-              Cras a nulla massa. Sed gravida, sem at tempus pretium, elit ex
-              aliquet nisl, ac accumsan metus mauris sit amet nisi. Orci varius
-              natoque penatibus et magnis dis parturient montes, nascetur
-              ridiculus mus. Etiam a ornare nisl. Aliquam metus ex, posuere eget
-              condimentum vitae, fermentum sit amet velit. Sed faucibus et diam
-              pretium pharetra. Fusce sit amet tempor sem. Praesent non iaculis
-              urna, vitae tincidunt nisi. Sed nec nibh et diam mollis
-              consectetur vel nec mi. Sed quis enim ut tortor ultrices pharetra
-              ac sit amet risus.
-              <br></br>
-              <br></br>
-              Nam metus erat, pharetra sed urna a, ultrices convallis lacus.
-              Etiam aliquam ultricies enim, ut maximus lectus ultricies quis.
-              Suspendisse potenti. Mauris eget suscipit nulla. Duis eleifend
-              molestie libero, ac tristique velit ullamcorper ac. Aliquam erat
-              volutpat. Sed ut turpis rutrum, placerat ipsum sed, elementum
-              augue. Donec ut gravida ipsum, nec scelerisque libero. Vivamus non
-              laoreet leo, in laoreet lorem. Phasellus tristique lectus sit amet
-              lacinia venenatis. Duis lobortis sapien ac justo sagittis, non
-              porta nibh facilisis. Vivamus egestas scelerisque arcu scelerisque
-              commodo. Nulla facilisi. Ut congue pretium venenatis.
-            </p>
-            <img src="" alt="ongelmia kuvan kanssa"></img>
+          <div className="punchLine">
+            <img
+              id="compensate"
+              className="compensate"
+              src={require("./images/compensateLogo.png")}
+              alt="julkinen liikenne"
+            />
+            <div className="introBox">
+              <p className="leipaTeksti">
+                Tiedostatko sinä jo ne asiat, jotka ovat ratkaisevassa asemassa
+                hiilineutraaliuden saavuttamisessa?
+                <br />
+                <br />
+                Entä tiedätkö, minkälainen vaikutus sinun käytökselläsi on
+                tavoitteen saavuttamiseen?
+              </p>
+              <a href="https://www.compensate.com/">
+                <h4 className="teeTesti">Tutustu Compensate-säätiöön</h4>
+              </a>
+            </div>
           </div>
           <div className="kohta2">
             <p className="isoTeksti2">
