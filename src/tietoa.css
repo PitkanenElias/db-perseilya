@@ -101,6 +101,28 @@ h3 {
   width: 250px;
 }
 
+#compensate{
+  width: 40vw;
+}
+
+.information{
+  display: flex;
+  justify-content: space-between;
+}
+.lahde {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  background-color: rgba(25, 57, 43, 0.80);
+  padding: 35px;
+  padding-bottom: 25px;
+  border-radius: 1vw;
+  font-size: 20px;
+  color: white;
+  z-index: 1;
+  transition: all ease-out 0.5s;
+}
+
 /* Media Query vaikuttaa vain kapeisiin näyttöihin */
 
 @media only screen and (max-width: 900px) {
