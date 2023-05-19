@@ -44,6 +44,10 @@ export default function About() {
             Turha veden juoksutus, liian pitkät suihkut ja vuotavat vesikalusteet voi huomaamatta valuttaa hukkaan kymmeniä litroja vettä päivässä. Vähentämällä ylimääräistä veden kulutusta, voit sekä keventää ympäristön kuormaa että säästää omaa lompakkoasi.
             <br/><br/>Kahdeksan minuutin suihku joka päivä maksaa sinulle vuodessa noin 300 euroa. Puolittamalla suihkussa käytetyn ajan puolitat samalla vedestä maksamasi laskun. Lämmin vesi maksaa keskimäärin yli kaksi kertaa enemmän kuin kylmä vesi. Puolittamalla suihkuajan kahdeksasta minuutista neljään minuuttiin hiilijalanjälkesi pienenee 0,5 % vuodessa. Asentamalla vesimittarin ja säästämällä 20 % vedenkulutuksesta pienennät hiilijalanjälkeäsi toisella 0,5 % vuodessa. Jos miljoona suomalaista tekisi näin, säästyisi lähes 9 000 henkilön kokonaishiilijalanjälki.
             </p>
+            <img className="icon1"
+            src={require("./images/Vesivuoto.svg")}
+            alt="Vesihana"> 
+            </img>
           </div>
           <div className="arkielamaa">
             <h4 className="väliväliOtsikko">Energiasta:</h4>
@@ -54,6 +58,10 @@ export default function About() {
             <br/><br/>
             Kun asennat omakotitalon tai mökin katolle aurinkokeräimen, saat lämmintä käyttövettä ilmaiseksi. Asennettua järjestelmää tarvitsee huoltaa vain harvoin. Alkuinvestoinnin jälkeen säästöä syntyy muun muassa lämmityskustannuksissa ja hiilijalanjälkesi pienenee 7 % vuodessa. Jos miljoonaa suomalaista asentaisi keräimen, säästyisi 66 000 asukkaan kokonaishiilijalanjälki.
             </p>
+            <img className="icon1"
+            src={require("./images/Sähkö.svg")}
+            alt="Sähkö"> 
+            </img>
           </div>
           <div className="arkielamaa">
             <h4 className="väliväliOtsikko">Kulkemisesta:</h4>
@@ -64,6 +72,10 @@ export default function About() {
             <br/><br/>
             Toisaalta etätyöpäivänä työt voit tehdä kotoa tai vaikkapa kahvilasta käsin. Työmatkoihin kuluva aika jää muuhun, ja joidenkin töiden tekeminen on tehokkaampaa. Jos työpaikallasi ei ole ollut tapana tehdä etätöitä, saattaa koko käsite olla työkavereiden keskuudessa vieras. Yksi etätyöpäivä viikossa pienentää hiilijalanjälkeä prosentin. Jos miljoona suomalaista tekee lisäksesi yhden etäpäivän viikossa, säästyy 11 000 henkilön hiilijalanjälki vuodessa.
             </p>
+            <img className="icon1"
+            src={require("./images/Auto.svg")}
+            alt="Auto"> 
+            </img>
           </div>
           <div className="arkielamaa">
             <h4 className="väliväliOtsikko">Hankinnoista</h4>
@@ -71,6 +83,10 @@ export default function About() {
             Haasta itsesi testaamaan kasvisruokavaliota vuoden ajan. Luvassa on taattuja hyötyjä. Ruokavalio monipuolistuu ja kokkaustaidot karttuvat. Kasvisruoka on edullista, terveellistä ja herkullista. Yhä useampi meistä on kasvissyöjä, joten valikoimaa ja vertaistukea on tarjolla runsaasti. Lihasta luopumalla voit pienentää hiilijalanjälkeäsi seitsemän prosenttia vuodessa. Säästö vastaa esimerkiksi 4100 autoilukilometriä.
             <br/><br/>
             Vanhat aarniometsät ovat tärkeitä hiilivarastoja ja yhteistä perintöämme, jonka suojelijaksi jokainen voi ryhtyä. Lahjoittamalla esimerkiksi sata euroa vuosittain ikimetsien suojeluun varmistat, että alueet muuttuvat luonnonsuojelualueiksi, jotka varastoivat hiiltä sekä ylläpitävät lajien kirjoa. Sadalla eurolla Luonnonperintösäätiö ostaa 200 neliömetriä luonnonalueita ja rauhoittaa ne pysyvästi.            </p>
+            <img className="icon1"
+            src={require("./images/Ostoskassi.svg")}
+            alt="Ostoskassi"> 
+            </img>
             </div>
           </div>
         </div>
