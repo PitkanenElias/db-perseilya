@@ -147,6 +147,11 @@ h3 {
 .haeTietoa{
   font-size: clamp(15px,2vw, 20px);
 }
+.ulkopuoliset{
+  text-align: center;
+  margin: 40px;
+  font-size: 50px;
+}
 
 /* Media Query vaikuttaa vain kapeisiin näyttöihin */
 

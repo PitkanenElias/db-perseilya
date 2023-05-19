@@ -90,6 +90,7 @@ export default function About() {
             </div>
           </div>
         </div>
+        <h3 className="väliOtsikko">Ulkopuolisia lähteitä</h3>
         <div className="wrappaaja">
           <div className="information">
             <div className="lahde">
