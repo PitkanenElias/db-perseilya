@@ -58,7 +58,7 @@ export default function About() {
               Asentamalla omakotitalon tai mökin katolle aurinkokeräimen saat lämmintä käyttövettä ilmaiseksi, ja järjestelmää tarvitsee huoltaa vain harvoin. Alkuinvestoinnin jälkeen säästöä syntyy muun muassa lämmityskustannuksista ja hiilijalanjälkesi pienenee 7 % vuodessa. Jos miljoonaa suomalaista asentaisi keräimen, säästyisi 66 000 asukkaan kokonaishiilijalanjälki.
               </p>
               <img className="icon1"
-              src={require("./images/Sähkö.svg")}
+              src={require("./images/Sahko.svg")}
               alt="Sähkö"> 
               </img>
             </div>
