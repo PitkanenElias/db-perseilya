@@ -1,5 +1,8 @@
 Hello world! This is the description README for VJP/VDM. Update me as the project goes along!
 
+Projektin toteuttamisessa on käytetty Node ja npm:ä. Projektin saa käynnistettyä lataamalla
+tiedosto sisältävät kansiot ja ajamalla sen noden terminaalin kautta "npm start" komennolla. 
+
 - 13 APR:
   Created the file // EP
 - 13 APR:
@@ -18,3 +21,5 @@ https://youth.europa.eu/get-involved/sustainable-development/how-reduce-my-carbo
 
 Astetta alemmas – Säästövinkit:
 https://www.astettaalemmas.fi/saastovinkit/kerrostalokoti/astetta_alempi_huonelampotila.19165.news
+
+
