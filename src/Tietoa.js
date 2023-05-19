@@ -37,6 +37,7 @@ export default function About() {
           Vuonna 2010 suomalaisen kulutusmenoista keskimäärin aiheutuvat kasvihuonekaasupäästöt olivat 11,5 tCO2e per henkilö. (CO2e on hiilijalanjäljen yksikkö. Lyhenne tarkoittaa hiilidioksidiekvivalenttia eli ihmisen tuottamien kasvihuonekaasujen ilmastoa lämmittävää vaikutusta. Kirjain t yksikön edessä tarkoittaa tonnia.) Henkilöä kohden lasketut kulutuksen kasvihuonekaasupäästöt ovat Euroopan mittakaavassa korkeat. Koko maailman keskiarvo oli 6,0 tCO2e eli suomalaisten päästöt ovat tähän verrattuna lähes kaksinkertaiset.
           </p>
           <h3 className="väliOtsikko">Arkielämän osa-alueita:</h3>
+          <div className="osa-alueet">
           <div className="arkielamaa">
             <h4 className="väliväliOtsikko">Vedestä:</h4>
             <p classNmae="tietoTekstiä">
@@ -70,6 +71,7 @@ export default function About() {
             Haasta itsesi testaamaan kasvisruokavaliota vuoden ajan. Luvassa on taattuja hyötyjä. Ruokavalio monipuolistuu ja kokkaustaidot karttuvat. Kasvisruoka on edullista, terveellistä ja herkullista. Yhä useampi meistä on kasvissyöjä, joten valikoimaa ja vertaistukea on tarjolla runsaasti. Lihasta luopumalla voit pienentää hiilijalanjälkeäsi seitsemän prosenttia vuodessa. Säästö vastaa esimerkiksi 4100 autoilukilometriä.
             <br/><br/>
             Vanhat aarniometsät ovat tärkeitä hiilivarastoja ja yhteistä perintöämme, jonka suojelijaksi jokainen voi ryhtyä. Lahjoittamalla esimerkiksi sata euroa vuosittain ikimetsien suojeluun varmistat, että alueet muuttuvat luonnonsuojelualueiksi, jotka varastoivat hiiltä sekä ylläpitävät lajien kirjoa. Sadalla eurolla Luonnonperintösäätiö ostaa 200 neliömetriä luonnonalueita ja rauhoittaa ne pysyvästi.            </p>
+            </div>
           </div>
         </div>
           <div className="wrappaaja">

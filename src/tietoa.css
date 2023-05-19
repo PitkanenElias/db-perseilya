@@ -28,6 +28,9 @@ body {
 }
 
 .asiaa {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
   margin-left: 5vw;
   margin-right: 5vw;
   background-color: pink;
@@ -165,16 +168,22 @@ h3 {
 
 .arkielamaa{
   margin-bottom: 20px;
+  margin-right: 20px;
   align-self: center;
   align-items: center;
   display: flex;
   flex-direction: column;
-  width: 40vw;
+  width: 30vw;
   background-color: rgba(25, 57, 43, 0.80);
   padding: 35px;
   padding-bottom: 25px;
   border-radius: 1vw;
   font-size: 20px;
   color: white;
-  z-index: 1;
-  transition: all ease-out 0.5s;}
+  z-index: 1;}
+
+  .osa-alueet{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    display:flex;
+    flex-direction: row;}
