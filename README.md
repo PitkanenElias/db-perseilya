@@ -1,5 +1,9 @@
 Hello world! This is the description README for VJP/VDM. Update me as the project goes along!
 
+Ryhmä 8:
+
+Kalle Keinonen (904740), Pietari Virkkunen (907912), Elias Pitkänen (909871), Jonni Hartikainen (100762617), Matvei Telov (1032611)
+
 Projektin toteuttamisessa on käytetty Node ja npm:ä.
 Projektin lähdekoodin saa näkyviin lataamalla
 tiedostot sisältävät kansiot ja ajamalla ne noden terminaalin kautta "npm start" komennolla.
