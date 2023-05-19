@@ -107,22 +107,24 @@ h3 {
 }
 
 .information{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 5vh;
+  display: relative;
 }
 .lahdeOtsikko{
   color: white;
   font-size: clamp(20px, 2.5vw, 30px);
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 7px;
 }
 
 .lahde {
   display: flex;
   flex-direction: column;
-  width: clamp(100px,30vw, 300px);
-  margin-left: clamp(20px, 5vw, 100px);
+  margin-bottom: 5vh;
+  width: clamp(70px, 30vw, 250px);
+  margin-left: clamp(5px, 3vw, 30px);
   background-color: rgba(25, 57, 43, 0.80);
-  padding: 35px;
+  padding: 30px;
   padding-bottom: 25px;
   border-radius: 1vw;
   font-size: 20px;
@@ -138,6 +140,9 @@ h3 {
   flex-direction: row;
   flex-wrap: wrap;
 }
+.esittelyTeksti{
+  font-size: 17px;
+}
 
 /* Media Query vaikuttaa vain kapeisiin näyttöihin */
 
@@ -147,6 +152,9 @@ h3 {
   }
   #ig6 {
     display: none;
+  }
+  .esittelyTeksti {
+    font-size: 15px;
   }
 }
 
