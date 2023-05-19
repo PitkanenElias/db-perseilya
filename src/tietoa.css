@@ -1,3 +1,7 @@
+body {
+  background-color: #f7f7f2;
+}
+
 .sivu {
   display: flex;
   flex-direction: column;
