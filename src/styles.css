@@ -73,7 +73,10 @@ body {
   justify-content: space-between;
 }
 .kuva1 {
+  z-index: -1;
   width: 100vw;
+  object-fit: cover;
+  height: 100vh;
   position: relative;
   filter: brightness(0.55);
 }
