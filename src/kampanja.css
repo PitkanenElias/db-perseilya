@@ -27,7 +27,7 @@ html {
   animation-timing-function: ease-out;
 }
 
-h2 {
+.semiHeader {
   font-size: var(--step-0);
   font-weight: 400;
   color: #f7f7f2;
@@ -36,7 +36,7 @@ h2 {
   animation-timing-function: ease-out;
 }
 
-body {
+.bodyK{
   display: flex;
   flex-direction: column;
   margin: 0;

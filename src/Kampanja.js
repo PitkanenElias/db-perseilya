@@ -37,7 +37,7 @@ export default function Info() {
   
   return (
     <>
-    <body>
+    <body className="bodyK">
         <header className="intro-block">
           <img src={require("./images/about-header.jpg")} alt="taiga stream header" />
           <div className="headers">
@@ -45,12 +45,11 @@ export default function Info() {
             <h1 className="bigHeader">KAMPANJASTA</h1>
           </div>
           <div className="intro-text">
-            <h2>
+            <h2 className="semiHeader">
               Tämäkin kampanja on kulkenut pitkän matkan, ennen kuin se on päätynyt
               katsottavaksesi. Tältä sivulta voit perehtyä menneeseen ja
               vaihtoehtoisiin tuleviin.
             </h2>
-          </div>
         </header>
         <div id="menuColor"></div>
         <div className="transition-wave">
