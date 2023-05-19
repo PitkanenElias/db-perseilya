@@ -19,7 +19,7 @@ export default function Home() {
     },
     {
       intro:
-        "Lentomatkailun hiilidioksidipäästöt ovat noin 175 – 300 kiloa per henkilö 1000 kilometrin matkalla.",
+        "Lentomatkailun hiilidioksidipäästöt ovat noin 175 - 300 kiloa per henkilö 1000 kilometrin matkalla.",
       statement:
         "	Vältän lentomatkustamista tai korvaan sitä esimerkiksi junilla",
       value: 5,
@@ -76,12 +76,12 @@ export default function Home() {
     },
   ];
   const feedBack = [
-    "Olet ilmastontuhoaja. Yritä parantaa tapasi",
-    "Sinulla olisi vielä paljon parannettavaa",
-    "Olet aika normaali",
-    "Teet jo joitain juttuja hyvin",
-    "Teet jo paljon hyvää",
-    "Olet täydellinen",
+    "Käsityksesi ilmastonmuutoksesta ei ole ihan ajan tasalla. Meidän kaikkien on tehtävä muutoksia arjessamme ja vähentää kuluttamista yhteisen määränpään eteen.",
+    "Tiedostat ilmasto-ongelman, muttet välttämättä tiedä miten käytännössä voit vaikuttaa sen estämiseen.",
+    "Olet melko neutraali ilmastokysymyksen suhteen. Pienikin muutos arjessasi tekee pitkällä tähtäimellä suuri vaikutus.",
+    "Olet tietoinen ilmastonmuutoksesta ja osaat jo ottaa sen osittain huomioon arjessasi. Sinulla kuitenkin on varaa parantaa toimintaasi ja kuluttamista.",
+    "Ilmastonmuutos ei ole sinulle uutta tietoa. Päivittäiset valintasi ovat keskivertoa ympäristöystävällisemmät ja tiedostat tarkoin päätöstesi vaikutuksen.",
+    "Mainiota! Ilmastotietoisuutesi on ajan tasalla, mikä näkyy myös arjessasi ja kulutustavoissasi. Yhdessä kohti yhteistä määränpäätä! ",
   ];
 
   const [points, setPoints] = useState([5, 5, 5, 5, 5, 5, 5, 5, 5, 5]); // Alussa amat arvot kuin statementListillä
@@ -249,7 +249,7 @@ export default function Home() {
           <strong className="result">Tuloksesi:</strong>
           {(grade !== undefined || grade === null) && (
             <div>
-              <h2>
+              < h2 className="palaute">
                 {grade !== null
                   ? feedBack[grade]
                   : "Vastaa kysymyksiin saadaksesi tuloksen"}
