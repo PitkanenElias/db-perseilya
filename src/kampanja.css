@@ -1,73 +1,182 @@
+:root {
+  --step--1: clamp(0.7rem, calc(0.6rem + 1.09vw), 1.4rem);
+  --step-0: clamp(1rem, calc(0.78rem + 1.09vw), 1.63rem);
+  --step-1: clamp(1.44rem, calc(1.06rem + 1.91vw), 2.54rem);
+  --step-2: clamp(1.73rem, calc(1.23rem + 2.51vw), 3.17rem);
+  --step-3: clamp(2.49rem, calc(1.63rem + 4.3vw), 4.96rem);
+  --step-4: clamp(3.98rem, calc(1.87rem + 4.5vw), 7.75rem);
+}
+
 html {
-  font-family: "Urbanist";
+  font-family: 'Urbanist';
+}
+
+.plainText {
+  max-width: 100%;
+  font-size: var(--step-1);
+  font-style: italic;
+  color: white;
+  margin: 0;
+}
+
+.bigHeader {
+  font-size: var(--step-4);
+  color: #f7f7f2;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+  animation-name: slidein;
+  animation-timing-function: ease-out;
+}
+
+h2 {
+  font-size: var(--step-0);
+  font-weight: 400;
+  color: #f7f7f2;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+  animation-name: slidein;
+  animation-timing-function: ease-out;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  background-color: #2e3f30;
+  object-fit: cover;
+  overflow-x: hidden;
 }
 
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
+.content {
+  background-image: url('/content/circle-scatter.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.bg-path {
+.headers {
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  z-index: -5;
-  left: 50%;
-  top: 0%;
-  height: 100%;
-  transform: translateX(-50%);
+  top: 25vh;
+  right: 8vw;
+  line-height: 1%;
+  text-align: right;
+  padding-left: 10vw;
 }
 
-.bg-path img {
-  height: 100%;
-  object-fit: cover;
+.headers h1:nth-child(1) {
+  animation-duration: 1.1s;
 }
 
-.grid-container {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  row-gap: 30vh;
-  column-gap: 5rem;
+.headers h1:nth-child(2) {
+  animation-duration: 1.3s;
 }
 
-.timeline-el {
-  font-size: xx-large;
-  font-style: italic;
-  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
-  align-self: center;
-  justify-self: center;
-  text-align: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
+.intro-text {
+  position: absolute;
+  width: 40vw;
+  text-align: left;
+  top: 60vh;
+  text-align: left;
+  margin-left: 5vw;
 }
 
-.timeline-el img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 1px 5px;
-  justify-self: center;
-  align-self: center;
+.intro-text h2:nth-child(1) {
+  animation-duration: 1.5s;
 }
 
-@media (max-width: 1280px) {
-  .timeline-text {
-    font-size: x-large;
-    font-style: italic;
-    align-self: end;
-    text-align: center;
+@keyframes slidein {
+  from {
+    translate: -150vw;
+  }
+  to {
+    translate: 0;
   }
 }
 
-@media (max-width: 850px) {
+.intro-block {
+  height: 100vh;
+  height: 100svh;
+  width: 100%;
+  background-color: #333;
+}
+
+.intro-block img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: blur(3px);
+}
+
+.transition-wave {
+  z-index: -20;
+}
+
+.transition-wave img {
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 10vh;
+  column-gap: 5vw;
+}
+
+.timeline-el {
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+
+.timeline-el .block {
+  transition: transform 0.3s ease-in-out;
+}
+
+.block img {
+  max-width: 25vw;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: clamp(1rem, 1.5rem, 2rem);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  background-color: #f7f7f2;
+  margin: clamp(1rem, 1rem + 2vw, 3rem);
+}
+
+.block > p {
+  margin: clamp(1rem, 1rem + 3vw, 5rem);
+  text-shadow: 2px 2px 7px rgba(0, 0, 0, 1);
+}
+
+.timeline-el > .block:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrow-left img {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  transform: rotate(180deg) scale(4) translateX(-2vw);
+  background-color: #f7f7f2;
+  border-radius: 50%;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 1);
+}
+
+.arrow-right img {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  transform: scaleY(-1) scale(4) translateX(-2vw);
+  background-color: #f7f7f2;
+  border-radius: 50%;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 1);
+}
+
+#end {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 920px) {
   .grid-container {
     display: flex;
     flex-direction: column;
