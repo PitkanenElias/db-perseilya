@@ -1,21 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./tietoa.css";
 export default function About() {
-  const [shouldAnimate, setShouldAnimate] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.pageYOffset;
-      // Tämä kertoo, missä kohtaa animaation kuuluu lähteä liikkelle, tai mitä ikinä halutaankaan tehdä
-      const targetPosition = 1500;
-      if (scrollPosition > targetPosition) {
-        setShouldAnimate(true);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   /**
    * Avaa sivun aina yläosasta
@@ -121,12 +106,6 @@ export default function About() {
               Cras a nulla massa.
             </p>
             <img src="" alt="ongelmia kuvan kanssa"></img>
-          </div>
-          <div className="ilmestyy">
-            <h2 className={shouldAnimate.toString()}>
-              Tämä ilmestyy scrollatessa ja tämän voisi animoida kauniisti.
-              Näitä voi myös tehdä paljon lisää
-            </h2>
           </div>
           <p className="igNimi">
             {" "}
