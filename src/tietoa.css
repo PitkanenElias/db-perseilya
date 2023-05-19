@@ -28,11 +28,8 @@ body {
 }
 
 .asiaa {
-  display: flex;
-  flex-direction: column;
-  left: 10vw;
-  margin-left: 2vw;
-  margin-right: 2vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 .ilmestyy h2 {
@@ -108,11 +105,18 @@ h3 {
 .information{
   display: flex;
   justify-content: space-between;
+  margin-bottom: 5vh;
 }
+.lahdeOtsikko{
+  color: white;
+  font-size: clamp(20px, 2.5vw, 30px);
+}
+
 .lahde {
   display: flex;
   flex-direction: column;
-  width: 40vw;
+  width: clamp(100px,30vw, 300px);
+  margin-left: clamp(20px, 5vw, 100px);
   background-color: rgba(25, 57, 43, 0.80);
   padding: 35px;
   padding-bottom: 25px;
@@ -121,6 +125,14 @@ h3 {
   color: white;
   z-index: 1;
   transition: all ease-out 0.5s;
+}
+.lahde:hover{
+  background-color: rgba(25, 57, 43);
+}
+.wrappaaja{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 /* Media Query vaikuttaa vain kapeisiin näyttöihin */
