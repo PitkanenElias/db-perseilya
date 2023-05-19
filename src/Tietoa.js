@@ -33,12 +33,12 @@ export default function About() {
             Lisätietoa Hiilineutraali Suomi 2035-hankkeesta
           </h3>
           <div className="punchLine">
-            <img
+            <img>
               id="compensate"
               className="compensate"
               src={require("./images/compensateLogo.png")}
-              alt="julkinen liikenne"
-            />
+              alt="julkinen liikenne" 
+              </img>
             <div className="introBox">
               <p className="leipaTeksti">
                 Tiedostatko sinä jo ne asiat, jotka ovat ratkaisevassa asemassa
