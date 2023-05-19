@@ -179,6 +179,9 @@ h3 {
   .esittelyTeksti{
     font-size: 12px;
   }
+  .lahdeOtsikko{
+    margin: 0;
+  }
 }
 
 .arkielamaa{
