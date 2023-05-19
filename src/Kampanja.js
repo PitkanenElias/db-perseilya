@@ -50,6 +50,7 @@ export default function Info() {
               katsottavaksesi. Tältä sivulta voit perehtyä menneeseen ja
               vaihtoehtoisiin tuleviin.
             </h2>
+          </div>
         </header>
         <div id="menuColor"></div>
         <div className="transition-wave">
