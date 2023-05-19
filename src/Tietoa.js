@@ -103,7 +103,7 @@ export default function About() {
               src={require("./images/compensateLogo.png")}
               alt="julkinen liikenne"
             />
-            <div className="introBox normalPos">
+            <div className="lahde">
               <h3>Suomen ilmastopaneeli</h3>
               <p className="leipaTeksti">
               Ilmastopaneeli on tieteellinen ja riippumaton asiantuntijaelin, joka tukee ilmastopolitiikan suunnittelua ja sitä koskevaa päätöksentekoa. Paneeli edistää tieteen ja politiikan välistä vuoropuhelua ilmastokysymyksissä. Paneeli lausuu ilmastosuunnitelmien luonnoksista, antaa suosituksia hallituksen ilmastopoliittiseen päätöksentekoon ja vahvistaa monitieteellistä otetta ilmastotieteissä.
@@ -114,7 +114,7 @@ export default function About() {
             </div>
           </div>
           <div className="information">
-            <div className="introBox normalPos">
+            <div className="lahde">
               <h3>Motiva</h3>
               <p className="leipaTeksti">
               Motiva on valtion kestävän kehityksen yhtiö, joka kannustaa energian ja materiaalien tehokkaaseen ja kestävään käyttöön. Tarjoamme julkishallinnolle, yrityksille, kunnille ja kuluttajille tietoa, ratkaisuja ja palveluja, joiden avulla ne voivat tehdä resurssitehokkaita, vaikuttavia ja kestäviä valintoja
@@ -137,7 +137,7 @@ export default function About() {
               src={require("./images/compensateLogo.png")}
               alt="julkinen liikenne"
             />
-            <div className="introBox normalPos">
+            <div className="lahde">
               <h3>Sitoumus2050</h3>
               <p className="leipaTeksti">
                 Tiedostatko sinä jo ne asiat, jotka ovat ratkaisevassa asemassa
