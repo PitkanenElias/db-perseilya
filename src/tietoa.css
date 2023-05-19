@@ -14,17 +14,19 @@ body {
   text-align: right;
   font-size: clamp(50px, 5vw, 100px);
   color: #e6e4df;
-  top: 25vh;
-  left: 20vw;
+  bottom: 30%;
+  left: 25vw;
   width: 50vw;
   overflow: visible;
 }
 
 .kuva1 {
   z-index: -1;
-  height: 100vh;
   width: 100vw;
-  object-fit: cover;
+}
+
+.yläosa{
+  position: relative;
 }
 
 .asiaa {
@@ -152,6 +154,45 @@ h3 {
   margin: 40px;
   font-size: 50px;
 }
+.tietoTekstiä{
+  margin-top: 10vh;
+  width: 64vw;
+  font-size: clamp(15px, 1.5vw, 30px);
+}
+.väliOtsikko{
+  margin-top: 10vh;
+}
+.icon1{
+  width: 20%;
+}
+
+.arkielamaa{
+  transition: all ease-out 0.5s;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  background-color: rgba(25, 57, 43, 0.80);
+  padding: 35px;
+  padding-bottom: 25px;
+  border-radius: 1vw;
+  font-size: 20px;
+  color: white;
+  z-index: 1;
+}
+
+.arkielamaa:hover{
+  background-color: rgba(25, 57, 43);
+}
+.osa-alueet{
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
 
 /* Media Query vaikuttaa vain kapeisiin näyttöihin */
 
@@ -165,8 +206,17 @@ h3 {
   .esittelyTeksti {
     font-size: 13.5px;
   }
+  .osa-alueet{
+    flex-wrap: none;
+  }
 }
+@media only screen and (max-width: 680px) {
 
+  .arkielamaa{
+    margin-right: 0;
+    width: 75vw;
+  }
+}
 @media only screen and (max-width: 600px) {
   h3 {
     font-size: 2rem;
@@ -187,29 +237,11 @@ h3 {
   .lahdeOtsikko{
     margin: 0;
   }
-}
-
-.arkielamaa{
-  transition: all ease-out 0.5s;
-  margin-bottom: 20px;
-  margin-right: 20px;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  width: 30vw;
-  background-color: rgba(25, 57, 43, 0.80);
-  padding: 35px;
-  padding-bottom: 25px;
-  border-radius: 1vw;
-  font-size: 20px;
-  color: white;
-  z-index: 1;}
-
-  .arkielamaa:hover{
-    background-color: rgba(25, 57, 43);
+  .tietoTekstiä{
+    width: 85vw;
+    font-size: 12px;
   }
-  .osa-alueet{
-
-    flex-wrap: wrap;
-    display:flex;
-    flex-direction: row;}
+  .väliOtsikko{
+    font-size: 20px;
+  }
+}
