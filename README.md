@@ -1,7 +1,8 @@
 Hello world! This is the description README for VJP/VDM. Update me as the project goes along!
 
-Projektin toteuttamisessa on käytetty Node ja npm:ä. Projektin saa käynnistettyä lataamalla
-tiedosto sisältävät kansiot ja ajamalla sen noden terminaalin kautta "npm start" komennolla. 
+Projektin toteuttamisessa on käytetty Node ja npm:ä.
+Projektin lähdekoodin saa näkyviin lataamalla
+tiedostot sisältävät kansiot ja ajamalla ne noden terminaalin kautta "npm start" komennolla. 
 
 - 13 APR:
   Created the file // EP
