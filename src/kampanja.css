@@ -49,7 +49,6 @@ html {
 }
 
 .content {
-  background-image: url('/circle-scatter.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }
