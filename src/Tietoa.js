@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect} from "react";
 import "./tietoa.css";
 export default function About() {
 
@@ -90,62 +90,61 @@ export default function About() {
             </div>
           </div>
         </div>
-          <div className="wrappaaja">
-            <div className="information">
-              <div className="lahde">
-                <h3 className="lahdeOtsikko">Suomen ilmastopaneeli</h3>
-                <p className="leipaTeksti">
-                Ilmastopaneeli on tieteellinen ja riippumaton asiantuntijaelin, joka tukee ilmastopolitiikan suunnittelua ja sitä koskevaa päätöksentekoa. Paneeli edistää tieteen ja politiikan välistä vuoropuhelua ilmastokysymyksissä. Paneeli lausuu ilmastosuunnitelmien luonnoksista, antaa suosituksia hallituksen ilmastopoliittiseen päätöksentekoon ja vahvistaa monitieteellistä otetta ilmastotieteissä.
-                </p>
-                <a href="https://www.ilmastopaneeli.fi/">
-                  <h4 className="teeTesti">Lisää tietoa</h4>
-                </a>
-              </div>
-            </div>
-            <div className="information">
-              <div className="lahde">
-                <h3 className="lahdeOtsikko">Motiva</h3>
-                <p className="leipaTeksti">
-                Motiva on valtion kestävän kehityksen yhtiö, joka kannustaa energian ja materiaalien tehokkaaseen ja kestävään käyttöön. Tarjoamme julkishallinnolle, yrityksille, kunnille ja kuluttajille tietoa, ratkaisuja ja palveluja, joiden avulla ne voivat tehdä resurssitehokkaita, vaikuttavia ja kestäviä valintoja
-                </p>
-                <a href="https://www.motiva.fi/">
-                  <h4 className="teeTesti">Lisää tietoa</h4>
-                </a>
-              </div>
-            </div>
-            <div className="information">
-              <div className="lahde">
-                <h3 className="lahdeOtsikko">Sitoumus2050</h3>
-                <p className="leipaTeksti">
-                Kansalaiset voivat tehdä henkilökohtaisia hiilijalanjälkisuunnitelmia Sitoumus2050-palvelussa. Kaikkia sitoumuksia yhdistää mitattavat tavoitteet, jotka vievät eteenpäin YK:n kestävän kehityksen Agenda 2030:n tavoitteita. Sitoumukset julkaistaan sitoumus2050 -palvelussa, joka toimii ikkunana Suomessa tehtävälle kestävän kehityksen työlle. Palvelussa oma sitoumus saa näkyvyyttä, toisaalta sitoumuksen julkaisu palvelussa edellyttää tulosten raportoimista.
-                </p>
-                <a href="https://sitoumus2050.fi/koti#/">
-                  <h4 className="teeTesti">Lisää tietoa</h4>
-                </a>
-              </div>
-            </div>
-            <div className="information">
-              <div className="lahde">
-                <h3 className="lahdeOtsikko">Luonnonperintösäätiö</h3>
-                <p className="leipaTeksti">
-                Luonnonperintösäätiö suojelee Suomen luontoa, ensisijaisesti uhanalaista metsää. Säätiö hankkii omistukseensa luonnonalueita ja takaa niille luonnonsuojelulain mukaisen pysyvän rauhoituksen. Se on voittoa tuottamaton, yleishyödyllinen yhteisö, jonka säännöissä määritelty tehtävä on luonnonsuojelualueiden perustaminen ja säilyttäminen.               </p>
-                <a href="https://luonnonperintosaatio.fi/">
-                  <h4 className="teeTesti">Lisää tietoa</h4>
-                </a>
-              </div>
-            </div>
-            <div className="information">
-              <div className="lahde">
-                <h3 className="lahdeOtsikko">Compensate</h3>
-                <p className="leipaTeksti">
-                Compensate tarjoaa korkealaatuisia päästökompensaatiopalveluita pääasiassa yrityksille ja muille organisaatioille. Compensate-säätiö keskittyy vapaaehtoisten hiilimarkkinoiden uudistamiseen ja sääntelyn kehittämiseen. Se on voittoa tavoittelematon ja sen toiminta rahoitetaan täysin lahjoituksilla.              </p>
-                <a href="https://sitoumus2050.fi/koti#/">
-                  <h4 className="teeTesti">Lisää tietoa</h4>
-                </a>
-              </div>
+        <div className="wrappaaja">
+          <div className="information">
+            <div className="lahde">
+              <h3 className="lahdeOtsikko">Suomen ilmastopaneeli</h3>
+              <p className="esittelyTeksti">
+              Ilmastopaneeli on tieteellinen ja riippumaton asiantuntijaelin, joka tukee ilmastopolitiikan suunnittelua ja sitä koskevaa päätöksentekoa. Paneeli edistää tieteen ja politiikan välistä vuoropuhelua ilmastokysymyksissä. Paneeli lausuu ilmastosuunnitelmien luonnoksista, antaa suosituksia hallituksen ilmastopoliittiseen päätöksentekoon ja vahvistaa monitieteellistä otetta ilmastotieteissä.
+              </p>
+              <a href="https://www.ilmastopaneeli.fi/">
+                <h4 className="haeTietoa">Lisää tietoa</h4>
+              </a>
             </div>
           </div>
-        
+          <div className="information">
+            <div className="lahde">
+              <h3 className="lahdeOtsikko">Sitoumus2050</h3>
+              <p className="esittelyTeksti">
+              Kansalaiset voivat tehdä henkilökohtaisia hiilijalanjälkisuunnitelmia Sitoumus2050-palvelussa. Kaikkia sitoumuksia yhdistää mitattavat tavoitteet, jotka vievät eteenpäin YK:n kestävän kehityksen Agenda 2030:n tavoitteita. Sitoumukset julkaistaan sitoumus2050 -palvelussa, joka toimii ikkunana Suomessa tehtävälle kestävän kehityksen työlle. Palvelussa oma sitoumus saa näkyvyyttä, toisaalta sitoumuksen julkaisu palvelussa edellyttää tulosten raportoimista.
+              </p>
+              <a href="https://sitoumus2050.fi/koti#/">
+                <h4 className="haeTietoa">Lisää tietoa</h4>
+              </a>
+            </div>
+          </div>
+          <div className="information">
+            <div className="lahde">
+              <h3 className="lahdeOtsikko">Luonnonperintösäätiö</h3>
+              <p className="esittelyTeksti">
+              Luonnonperintösäätiö suojelee Suomen luontoa, ensisijaisesti uhanalaista metsää. Säätiö hankkii omistukseensa luonnonalueita ja takaa niille luonnonsuojelulain mukaisen pysyvän rauhoituksen. Se on voittoa tuottamaton, yleishyödyllinen yhteisö, jonka säännöissä määritelty tehtävä on luonnonsuojelualueiden perustaminen ja säilyttäminen.               </p>
+              <a href="https://luonnonperintosaatio.fi/">
+                <h4 className="haeTietoa">Lisää tietoa</h4>
+              </a>
+            </div>
+          </div>
+          <div className="information">
+            <div className="lahde">
+              <h3 className="lahdeOtsikko">Compensate</h3>
+              <p className="esittelyTeksti">
+              Compensate tarjoaa korkealaatuisia päästökompensaatiopalveluita pääasiassa yrityksille ja muille organisaatioille. Compensate-säätiö keskittyy vapaaehtoisten hiilimarkkinoiden uudistamiseen ja sääntelyn kehittämiseen. Se on voittoa tavoittelematon ja sen toiminta rahoitetaan täysin lahjoituksilla.              </p>
+              <a href="https://sitoumus2050.fi/koti#/">
+                <h4 className="haeTietoa">Lisää tietoa</h4>
+              </a>
+            </div>
+          </div>
+          <div className="information">
+            <div className="lahde">
+              <h3 className="lahdeOtsikko">Motiva</h3>
+              <p className="esittelyTeksti">
+              Motiva on valtion kestävän kehityksen yhtiö, joka kannustaa energian ja materiaalien tehokkaaseen ja kestävään käyttöön. Tarjoamme julkishallinnolle, yrityksille, kunnille ja kuluttajille tietoa, ratkaisuja ja palveluja, joiden avulla ne voivat tehdä resurssitehokkaita, vaikuttavia ja kestäviä valintoja
+              </p>
+              <a href="https://www.motiva.fi/">
+                <h4 className="haeTietoa">Lisää tietoa</h4>
+              </a>
+            </div>
+          </div>
+        </div>
         <p className="igNimi">
           {" "}
           Seuraa meitä myös Instagramissa @hiiletonsuomi
