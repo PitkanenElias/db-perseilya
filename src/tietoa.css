@@ -149,3 +149,19 @@ h3 {
     display: none;
   }
 }
+
+.arkielamaa{
+  margin-bottom: 20px;
+  align-self: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  background-color: rgba(25, 57, 43, 0.80);
+  padding: 35px;
+  padding-bottom: 25px;
+  border-radius: 1vw;
+  font-size: 20px;
+  color: white;
+  z-index: 1;
+  transition: all ease-out 0.5s;}
