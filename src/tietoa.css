@@ -111,7 +111,7 @@ h3 {
 }
 .lahdeOtsikko{
   color: white;
-  font-size: clamp(20px, 2.5vw, 30px);
+  font-size: clamp(17px, 2.5vw, 25px);
   margin: 0;
   margin-top: 20px;
   margin-bottom: 7px;
@@ -121,7 +121,7 @@ h3 {
   display: flex;
   flex-direction: column;
   margin-bottom: 5vh;
-  width: clamp(70px, 30vw, 250px);
+  width: clamp(200px, 30vw, 250px);
   margin-left: clamp(5px, 3vw, 30px);
   background-color: rgba(25, 57, 43, 0.80);
   padding: 30px;
@@ -139,9 +139,13 @@ h3 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .esittelyTeksti{
   font-size: 17px;
+}
+.haeTietoa{
+  font-size: clamp(15px,2vw, 20px);
 }
 
 /* Media Query vaikuttaa vain kapeisiin näyttöihin */
@@ -154,7 +158,7 @@ h3 {
     display: none;
   }
   .esittelyTeksti {
-    font-size: 15px;
+    font-size: 13.5px;
   }
 }
 
@@ -171,6 +175,9 @@ h3 {
 
   #ig5 {
     display: none;
+  }
+  .esittelyTeksti{
+    font-size: 12px;
   }
 }
 

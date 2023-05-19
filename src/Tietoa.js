@@ -88,17 +88,6 @@ export default function About() {
           </div>
           <div className="information">
             <div className="lahde">
-              <h3 className="lahdeOtsikko">Motiva</h3>
-              <p className="esittelyTeksti">
-              Motiva on valtion kestävän kehityksen yhtiö, joka kannustaa energian ja materiaalien tehokkaaseen ja kestävään käyttöön. Tarjoamme julkishallinnolle, yrityksille, kunnille ja kuluttajille tietoa, ratkaisuja ja palveluja, joiden avulla ne voivat tehdä resurssitehokkaita, vaikuttavia ja kestäviä valintoja
-              </p>
-              <a href="https://www.motiva.fi/">
-                <h4 className="haeTietoa">Lisää tietoa</h4>
-              </a>
-            </div>
-          </div>
-          <div className="information">
-            <div className="lahde">
               <h3 className="lahdeOtsikko">Sitoumus2050</h3>
               <p className="esittelyTeksti">
               Kansalaiset voivat tehdä henkilökohtaisia hiilijalanjälkisuunnitelmia Sitoumus2050-palvelussa. Kaikkia sitoumuksia yhdistää mitattavat tavoitteet, jotka vievät eteenpäin YK:n kestävän kehityksen Agenda 2030:n tavoitteita. Sitoumukset julkaistaan sitoumus2050 -palvelussa, joka toimii ikkunana Suomessa tehtävälle kestävän kehityksen työlle. Palvelussa oma sitoumus saa näkyvyyttä, toisaalta sitoumuksen julkaisu palvelussa edellyttää tulosten raportoimista.
@@ -128,8 +117,18 @@ export default function About() {
               </a>
             </div>
           </div>
+          <div className="information">
+            <div className="lahde">
+              <h3 className="lahdeOtsikko">Motiva</h3>
+              <p className="esittelyTeksti">
+              Motiva on valtion kestävän kehityksen yhtiö, joka kannustaa energian ja materiaalien tehokkaaseen ja kestävään käyttöön. Tarjoamme julkishallinnolle, yrityksille, kunnille ja kuluttajille tietoa, ratkaisuja ja palveluja, joiden avulla ne voivat tehdä resurssitehokkaita, vaikuttavia ja kestäviä valintoja
+              </p>
+              <a href="https://www.motiva.fi/">
+                <h4 className="haeTietoa">Lisää tietoa</h4>
+              </a>
+            </div>
+          </div>
         </div>
-        
         <p className="igNimi">
           {" "}
           Seuraa meitä myös Instagramissa @hiiletonsuomi
