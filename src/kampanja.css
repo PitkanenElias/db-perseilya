@@ -9,6 +9,7 @@
 
 html {
   font-family: 'Urbanist';
+  overflow-x: hidden;
 }
 
 .plainText {
@@ -36,7 +37,7 @@ html {
   animation-timing-function: ease-out;
 }
 
-.bodyK{
+.bodyK {
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -48,7 +49,7 @@ html {
 }
 
 .content {
-  background-image: url('/content/circle-scatter.svg');
+  background-image: url('/circle-scatter.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -106,10 +107,6 @@ html {
   width: 100%;
   object-fit: cover;
   filter: blur(3px);
-}
-
-.transition-wave {
-  z-index: -20;
 }
 
 .transition-wave img {
