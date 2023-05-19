@@ -33,14 +33,16 @@ export default function About() {
             Lisätietoa Hiilineutraali Suomi 2035-hankkeesta
           </h3>
           <p className="tietoTekstiä">
-          72 prosenttia koko maailman kasvihuonekaasupäästöistä aiheutuu kotitalouksien kulutuksesta. Tutkimuksen mukaan osuus on samaa luokkaa myös Suomessa: kotitalouksien kulutus muodostaa 68 prosenttia kotimaan loppukäytön kasvihuonekaasupäästöistä. Loput 32 prosenttia syntyvät julkisesta kulutuksesta ja investoinneista. Ilmastonmuutoksen hillintä edellyttääkin siis toimia koko yhteiskunnassa.
-          Vuonna 2010 suomalaisen kulutusmenoista keskimäärin aiheutuvat kasvihuonekaasupäästöt olivat 11,5 tCO2e per henkilö. (CO2e on hiilijalanjäljen yksikkö. Lyhenne tarkoittaa hiilidioksidiekvivalenttia eli ihmisen tuottamien kasvihuonekaasujen ilmastoa lämmittävää vaikutusta. Kirjain t yksikön edessä tarkoittaa tonnia.) Henkilöä kohden lasketut kulutuksen kasvihuonekaasupäästöt ovat Euroopan mittakaavassa korkeat. Koko maailman keskiarvo oli 6,0 tCO2e eli suomalaisten päästöt ovat tähän verrattuna lähes kaksinkertaiset.
+          72 prosenttia koko maailman kasvihuonekaasupäästöistä aiheutuu kotitalouksien kulutuksesta. Myös Suomessa kotitalouksien kulutus muodostaa 68 prosenttia kotimaan kasvihuonekaasupäästöistä. Loput syntyvät julkisesta kulutuksesta ja investoinneista. Ilmastonmuutoksen hillintä edellyttääkin siis toimia koko yhteiskunnassa. <br/><br/>
+          Vuonna 2010 suomalaisen kulutusmenoista keskimäärin aiheutuvat kasvihuonekaasupäästöt olivat 11,5 tCO2e / henkilö. Koko maailman keskiarvo oli 6,0 tCO2e,  eli suomalaisten päästöt ovat tähän verrattuna lähes kaksinkertaiset. Myös Euroopan mittakaavassa päästömäärä on korkea, ja yhteisvastuun nimissä suomalaisten on aika toimia.<br/><br/>
+          Alta löydät arkielämää lähellä olevia aihealueita, joihin vaikuttamalla juuri sinä voit olla mukana nostamassa Suomea ilmastonmuutoksen vastaisen työn aallonharjalle.
+
           </p>
           <h3 className="väliOtsikko">Arkielämän osa-alueita:</h3>
           <div className="osa-alueet">
           <div className="arkielamaa">
             <h4 className="väliväliOtsikko">Vedestä:</h4>
-            <p classNmae="esittelyTeksti">
+            <p className="esittelyTeksti">
             Turha veden juoksutus, liian pitkät suihkut ja vuotavat vesikalusteet voi huomaamatta valuttaa hukkaan kymmeniä litroja vettä päivässä. Vähentämällä ylimääräistä veden kulutusta, voit sekä keventää ympäristön kuormaa että säästää omaa lompakkoasi.
             <br/><br/>Kahdeksan minuutin suihku joka päivä maksaa sinulle vuodessa noin 300 euroa. Puolittamalla suihkussa käytetyn ajan puolitat samalla vedestä maksamasi laskun. Lämmin vesi maksaa keskimäärin yli kaksi kertaa enemmän kuin kylmä vesi. Puolittamalla suihkuajan kahdeksasta minuutista neljään minuuttiin hiilijalanjälkesi pienenee 0,5 % vuodessa. Asentamalla vesimittarin ja säästämällä 20 % vedenkulutuksesta pienennät hiilijalanjälkeäsi toisella 0,5 % vuodessa. Jos miljoona suomalaista tekisi näin, säästyisi lähes 9 000 henkilön kokonaishiilijalanjälki.
             </p>
@@ -51,7 +53,7 @@ export default function About() {
           </div>
           <div className="arkielamaa">
             <h4 className="väliväliOtsikko">Energiasta:</h4>
-            <p classNmae="esittelyTeksti">
+            <p className="esittelyTeksti">
             Kodeissa energiaa kuluu eniten lämmitykseen. Toiseksi eniten sähköä vie veden lämmittäminen. Onkin erityisen tärkeää varmistaa, että asunnon lämpötila on korkeintaan 21 astetta ja lämmintä vettä ei tuhlata.
             <br/><br/>
             Kodin energiatehokkuutta parantavista ratkaisuista ilmalämpöpumppu on kustannustehokkain. Talvella se lämmittää kodin tehokkaasti ja edullisesti, kun taas helteillä se jäähdyttää huoneilmaa. Ilmalämpöpumpun avulla hiilijalanjälkesi pienenee 4 % vuodessa. Jos miljoona suomalaista asentaisi ilmalämpöpumpun, säästyisi noin 39 000 henkilön kokonaishiilijalanjälki.
@@ -65,7 +67,7 @@ export default function About() {
           </div>
           <div className="arkielamaa">
             <h4 className="väliväliOtsikko">Kulkemisesta:</h4>
-            <p classNmae="esittelyTeksti">
+            <p className="esittelyTeksti">
             Liikenne tuottaa noin 20 prosenttia Suomen kasvihuonekaasupäästöistä. Onneksi bensiinille on nykyään vähäpäästöisempiä vaihtoehtoja. Yksi näistä on bioetanoli, joka on biojätteestä valmistettu kotimainen ja ympäristöystävällinen valinta. Suomessa RE85-etanolipolttoainetta valmistetaan tähteistä, kuten hävikkileivästä. Pienellä investoinnilla voit muuttaa bensiini- tai dieselkäyttöisen auton RE85 käyttöiseksi, kunhan autossa ei ole suorasuihkumoottoria. Biojätteestä valmistetun etanolin osuus polttonesteessä laskee autoilun fossiilisia päästöjä jopa 80 prosenttia. Etanolikäyttöisellä autolla ajaminen polttomoottoriauton sijaan pienentää hiilijalanjälkeäsi 16,5 prosenttia vuodessa. Jos miljoonaa suomalaista tekisi näin, laskennallisesti säästyisi noin 181 000 asukkaan kokonaishiilijalanjälki.
             <br/><br/>
             Tai mitä jos pyytäisit kaverin kyytiin tai perustaisit kimppakyytiryhmän? Jaettu työmatka on myös oiva hetki aamupalaverille työporukan kesken. Jos matkustat kolmen henkilön kimppakyydissä kolmesti viikossa yksin ajamisen sijasta, pienenee hiilijalanjälkesi 1 % vuodessa. Jos miljoona suomalaista tekee näin, säästyy 11 000 suomalaisen hiilijalanjälki vuodessa.
@@ -79,7 +81,7 @@ export default function About() {
           </div>
           <div className="arkielamaa">
             <h4 className="väliväliOtsikko">Hankinnoista</h4>
-            <p classNmae="esittelyTeksti">
+            <p className="esittelyTeksti">
             Haasta itsesi testaamaan kasvisruokavaliota vuoden ajan. Luvassa on taattuja hyötyjä. Ruokavalio monipuolistuu ja kokkaustaidot karttuvat. Kasvisruoka on edullista, terveellistä ja herkullista. Yhä useampi meistä on kasvissyöjä, joten valikoimaa ja vertaistukea on tarjolla runsaasti. Lihasta luopumalla voit pienentää hiilijalanjälkeäsi seitsemän prosenttia vuodessa. Säästö vastaa esimerkiksi 4100 autoilukilometriä.
             <br/><br/>
             Vanhat aarniometsät ovat tärkeitä hiilivarastoja ja yhteistä perintöämme, jonka suojelijaksi jokainen voi ryhtyä. Lahjoittamalla esimerkiksi sata euroa vuosittain ikimetsien suojeluun varmistat, että alueet muuttuvat luonnonsuojelualueiksi, jotka varastoivat hiiltä sekä ylläpitävät lajien kirjoa. Sadalla eurolla Luonnonperintösäätiö ostaa 200 neliömetriä luonnonalueita ja rauhoittaa ne pysyvästi.            </p>

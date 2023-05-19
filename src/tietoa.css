@@ -185,6 +185,7 @@ h3 {
 }
 
 .arkielamaa{
+  transition: all ease-out 0.5s;
   margin-bottom: 20px;
   margin-right: 20px;
   align-self: center;
@@ -200,8 +201,11 @@ h3 {
   color: white;
   z-index: 1;}
 
+  .arkielamaa:hover{
+    background-color: rgba(25, 57, 43);
+  }
   .osa-alueet{
-    justify-content: space-evenly;
+
     flex-wrap: wrap;
     display:flex;
     flex-direction: row;}
