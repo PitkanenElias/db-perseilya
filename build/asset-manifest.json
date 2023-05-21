@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/~pitkane8/build/static/css/main.860cd5be.css",
+    "main.js": "/~pitkane8/build/static/js/main.1c2ec2a2.js",
+    "static/media/aboutKuva.webp": "/~pitkane8/build/static/media/aboutKuva.91c05cf7b3e3b976e5ac.webp",
+    "static/media/about-header.jpg": "/~pitkane8/build/static/media/about-header.0131e92227da090f866d.jpg",
+    "static/media/revontulet.webp": "/~pitkane8/build/static/media/revontulet.584de9f1aafc9e49fbbd.webp",
+    "static/media/deers.webp": "/~pitkane8/build/static/media/deers.cec43400a4cdc9be6418.webp",
+    "static/media/metro.webp": "/~pitkane8/build/static/media/metro.9f7edc706f2b815b621c.webp",
+    "static/media/crosswalk.png": "/~pitkane8/build/static/media/crosswalk.50994ff7f2121e40f62b.png",
+    "static/media/green-city.png": "/~pitkane8/build/static/media/green-city.e06515ecb805b9d9c707.png",
+    "static/media/social-media.png": "/~pitkane8/build/static/media/social-media.8e424fad1c3fe0bb86cb.png",
+    "static/media/finnish-parliament.png": "/~pitkane8/build/static/media/finnish-parliament.82fa03f60208c9756c56.png",
+    "static/media/Instagram.webp": "/~pitkane8/build/static/media/Instagram.3692a9cfb3c51d3b295b.webp",
+    "static/media/smog.png": "/~pitkane8/build/static/media/smog.08b17abda1085de67e2b.png",
+    "static/media/un-flags.png": "/~pitkane8/build/static/media/un-flags.516018ec8d555decc8de.png",
+    "static/media/ministerioLogo.svg": "/~pitkane8/build/static/media/ministerioLogo.3b778d845c6c77ff3ef90e55890b2f07.svg",
+    "static/media/ig_quote.webp": "/~pitkane8/build/static/media/ig_quote.f8f553604e21f2f52f24.webp",
+    "static/media/ig_fakta.webp": "/~pitkane8/build/static/media/ig_fakta.e3f80da2c831a112f630.webp",
+    "static/media/ig_tutkimus.webp": "/~pitkane8/build/static/media/ig_tutkimus.d430ff2498314dfb0e0a.webp",
+    "static/media/ig_ilmastoahdistus.webp": "/~pitkane8/build/static/media/ig_ilmastoahdistus.4502ca073cdbae51e3d5.webp",
+    "static/media/ig_kyselytulos.webp": "/~pitkane8/build/static/media/ig_kyselytulos.d7ae9176dc99758e9695.webp",
+    "static/media/ig_kysymys.webp": "/~pitkane8/build/static/media/ig_kysymys.b9d71f65e63027485542.webp",
+    "static/media/Twitter.webp": "/~pitkane8/build/static/media/Twitter.725ec28411913e23fe8f.webp",
+    "static/media/Vesivuoto.svg": "/~pitkane8/build/static/media/Vesivuoto.6d3f4e496002e8e98260e4f1bdd743a4.svg",
+    "static/media/Auto.svg": "/~pitkane8/build/static/media/Auto.2071c3fdc3499c8c16948568642464b9.svg",
+    "static/media/Ostoskassi.svg": "/~pitkane8/build/static/media/Ostoskassi.b9912e3da614d2b482421efa94865c2e.svg",
+    "static/media/stacked-waves.svg": "/~pitkane8/build/static/media/stacked-waves.267843f5afe5740b1e63d48809a36461.svg",
+    "static/media/Facebook.webp": "/~pitkane8/build/static/media/Facebook.d6bec0f0926780ecf716.webp",
+    "static/media/Sahko.svg": "/~pitkane8/build/static/media/Sahko.4b5cb5dcd74f8c9eca0a60e8ae173c3d.svg",
+    "index.html": "/~pitkane8/build/index.html",
+    "static/media/arrow.svg": "/~pitkane8/build/static/media/arrow.ca7c9ea0e39c1febefcb32ceb7b3fb9b.svg",
+    "main.860cd5be.css.map": "/~pitkane8/build/static/css/main.860cd5be.css.map",
+    "main.1c2ec2a2.js.map": "/~pitkane8/build/static/js/main.1c2ec2a2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.860cd5be.css",
+    "static/js/main.1c2ec2a2.js"
+  ]
+}
