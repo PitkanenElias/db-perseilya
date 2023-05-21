@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/PitkanenElias/vjp-vdm-project/issues"
   },
-  "homepage": "https://users.aalto.fi/~pitkane8/build/",
+  "homepage": "https://master--frabjous-cactus-0c6ad2.netlify.app/",
   "dependencies": {
     "gh-pages": "^5.0.0",
     "lodash": "4.17.21",
